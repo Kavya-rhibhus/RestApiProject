@@ -30,7 +30,7 @@ public class FleetOnboarding extends BaseClass {
 	public ExtentTest test;
 	public String ChefOnboarding;
 	public String RestaurantOnboardingJwt;
-	public String FleetOnboardingJwt;
+	public String FleetOnboardingJwt="eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTQ2NjcwOTEsImV4cCI6MTY5NzI1OTA5MSwiaXNzIjoicm95b29yZGVycy5jb20ifQ.XKEgG4IQuDRb54sPb7tJoZXEnLkHRoaZNiUu26HglSU";
 	
 	@SuppressWarnings("deprecation")
 	@BeforeSuite

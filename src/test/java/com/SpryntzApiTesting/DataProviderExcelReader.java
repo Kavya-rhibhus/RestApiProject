@@ -18,15 +18,15 @@ import com.baseclass.BaseClass;
 
 public class DataProviderExcelReader extends BaseClass{
 	
-	static String filepath="C:\\Users\\desktop\\eclipse\\RestApi_Automation_All_Projects\\ApiAutomation\\src\\test\\java\\com\\SpryntzApiTesting\\Api-List-Spryntz\\SpryntzApiListFunct.xlsx";
+	static String filepath="C:\\Users\\HP\\eclipse\\newapitestingautomation\\src\\test\\java\\com\\SpryntzApiTesting\\Api-List-Spryntz\\SpryntzApiListFunct.xlsx";
 	//static String sheetnameAfterlogin="Restaurant onboarding";
 	//static String sheetnameChef="Chef";
 	static String sheetnameChef="ChefPNTest";
 	
-	static String sheetnameRest="Rest";
-	static String sheetnameFleet="Fleet";
+	static String sheetnameRest="Login_Otp";
+	static String sheetnameFleet="NewFleet";
 	static String sheetnameCust="Cust1";
-	
+	 
 	
 		@DataProvider(name = "RestaurantOnboarding")
 	    public static Object[][] readExcelData() throws IOException {

@@ -1,0 +1,2270 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href='https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>ExtentReports</title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'>ExtentReports</span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Sep 14, 2023 10:29:23 am</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m12 l12 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Tests</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='73.684%'><span class='strong'>14</span> test(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='26.316%'>5</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:25 am</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:25 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:28 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+135ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:25 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:28 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER2and Method is:POST
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:28 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:28 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v1/restaurant/register
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:28 am</td>
+				<td class='step-details'>
+						Payload :{
+    "upload_logo" : "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+    "name" : "Ambur Biryani",
+    "vendor_description" : "Veg and Non Veg multi cuisine restaurant",
+    "vendor_tags" : ["Hyderabad biryani, Ambur Biryani"],
+    "email" : "amburbiryani.111@gmail.com",
+    "dialCode" : "+91",
+    "phone_no" : "9990009999",
+    "upload_banner" : "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+    "address" : "2, 7th A Main Rd, 3rd Block, HBR Layout, Bengaluru, Karnataka 560043",
+    "website" : "www.ambutbiryani111.com",
+    "latitude" : "13.019144",
+    "longitude" : "77.646454",
+    "state" : "Karnataka",
+    "city" : "Bangalore",
+    "pincode" : "560043",
+    "country" : "India",
+    "dine_in" : 1,
+"delivery" : 0,
+"takeaway" : 0,
+"check_conditions" : 1,
+"system_id" : "44443DDDWWxxEE@",
+    "social_url" : "https://facebook.com,https://twitter.com,https://youtube.com",
+    "social_icon" : "fa fa-facebook, fa fa-twitter, fa fa-youtube",
+    "trade_license" : "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:28 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :200
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:28 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"status":"Success","message":"Restaurant updated Successfully!","data":{"id":421,"name":"Ambur Biryani","slug":"ambur-biryani","desc":"Veg and Non Veg multi cuisine restaurant","short_desc":null,"logo":{"proxy_url":"https:\/\/images.spryntzqa.com\/insecure\/fill\/","image_path":"\/sm\/0\/plain\/https:\/\/spryntz-qa-bucket.s3.ap-south-1.amazonaws.com\/default\/default_logo.png@webp","image_fit":"https:\/\/images.spryntzqa.com\/insecure\/fit\/","image_s3_url":"https:\/\/spryntz-qa-bucket.s3.ap-south-1.amazonaws.com\/default\/default_logo.png"},"banner":{"proxy_url":"https:\/\/images.spryntzqa.com\/insecure\/fill\/","image_path":"\/sm\/0\/plain\/https:\/\/spryntz-qa-bucket.s3.ap-south-1.amazonaws.com\/default\/default_image.png@webp","image_fit":"https:\/\/images.spryntzqa.com\/insecure\/fit\/","image_s3_url":"https:\/\/spryntz-qa-bucket.s3.ap-south-1.amazonaws.com\/default\/default_image.png"},"address":"2, 7th A Main Rd, 3rd Block, HBR Layout, Bengaluru, Karnataka 560043","email":"amburbiryani.111@gmail.com","website":"www.ambutbiryani111.com","phone_no":"9990009999","dial_code":"+91","latitude":"13.019144","longitude":"77.646454","order_min_amount":"0.00","order_pre_time":0,"auto_reject_time":null,"commission_percent":"1.00","sharing_type":"Percentage","sharing_value":"0.00","loyalty_program_subscribed":0,"table_reservation_subscribed":0,"fleet_software_subscribed":0,"festive_marketing_subscribed":0,"commission_fixed_per_order":"0.00","commission_monthly":"0.00","dine_in":1,"takeaway":0,"delivery":0,"checkout_direct":"0","rental":0,"pick_drop":0,"on_demand":0,"laundry":0,"appointment":0,"status":0,"add_category":1,"setting":0,"is_show_vendor_details":0,"created_at":"2023-07-20T10:24:35.000000Z","updated_at":"2023-09-14T04:59:34.000000Z","show_slot":1,"vendor_templete_id":5,"auto_accept_order":0,"service_fee_percent":"0.00","slot_minutes":null,"orders_per_slot":0,"order_amount_for_delivery_fee":"0","delivery_fee_minimum":"0.00","delivery_fee_maximum":"0.00","closed_store_order_scheduled":0,"pincode":"560043","shiprocket_pickup_name":null,"city":"Bangalore","state":"Karnataka","country":"India","return_request":0,"ahoy_location":null,"max_safety":0,"need_container_charges":0,"fixed_fee":0,"fixed_fee_amount":"0.00","price_bifurcation":0,"instagram_url":null,"service_charges_tax":0,"delivery_charges_tax":0,"container_charges_tax":0,"service_charges_tax_id":0,"delivery_charges_tax_id":0,"container_charges_tax_id":0,"easebuzz_sub_merchent_id":null,"fixed_fee_tax":0,"fixed_fee_tax_id":0,"rescheduling_charges":"0","pickup_cancelling_charges":"0","cron_for_service_area":0,"add_markup_price":0,"markup_price_tax_id":0,"dynamic_html":null,"rating":null,"balance_loyalty_point":0,"bulk_orders_subscribed":0,"dispatch_team_id":null,"minimum_order_value_for_delivery_fee_sharing":null,"award_program_subscribed":0,"restaurant_hashtag":"SPRNAB421","base_price":"0.00","base_distance":"0.00","distance_fee":"0.00","meal_membership_subscribed":0,"auto_allocation_enabled":0,"restaurant_fb_page":null,"trade_license":"https:\/\/spryntz-qa-bucket.s3.ap-south-1.amazonaws.com\/default\/default_image.png","is_restaurant":1,"is_fleet_provider":0,"system_id":"44443DDDWWxxEE@-R","cost_for_two_min":"0.00","cost_for_two_max":"0.00","locality":""}}
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>10:29:28 am</td>
+				<td class='step-details'>
+						Assertion failed: Expected status code is  Incorrect expected [401] but found [200]
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:28 am</td>
+				<td class='step-details'>
+						ROWNUMBER2row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:29 am</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:29 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:31 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+830ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:29 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:31 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER3and Method is:POST
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:31 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:31 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v1/owner/register
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:31 am</td>
+				<td class='step-details'>
+						Payload :{
+"avatar" : "/Users/khalidmithaigar/Downloads/owner-profile-image.png",
+"system_id" : "2223DDDWWxxEE@",
+"email" : "aniowner@spryntz.com",
+"name" : "Paradise Owner",
+"title" : "Mr.",
+"dialCode" : "+91",
+"phone_no" : "9088867766",
+"password" : "Anish@123",
+"confirm_password" : "Anish@123",
+"vendor_id" : 1,
+"countryData" : "IN",
+"system_id" : "44443DDDWWxxEE@"
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:31 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :200
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:31 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"status":"success","message":"Restaurant Owner is updated successfully","data":{"id":645,"name":"Paradise Owner","email":"aniowner@spryntz.com","description":null,"phone_number":"9088867766","dial_code":"+91","email_verified_at":null,"type":1,"status":1,"country_id":99,"role_id":1,"auth_token":"eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTI4Njc4MzYsImV4cCI6MTY5NTU0NjIzNiwiaXNzIjoicm95b29yZGVycy5jb20ifQ.3MbEUR13zudadySH7yBdp852xXH2LOV5FoSR7UeUoi8","system_id":"44443DDDWWxxEE@-O","created_at":"2023-08-09T05:34:16.000000Z","updated_at":"2023-09-14T04:59:37.000000Z","facebook_auth_id":null,"twitter_auth_id":null,"google_auth_id":null,"apple_auth_id":null,"image":{"proxy_url":"https:\/\/images.spryntzqa.com\/insecure\/fill\/","image_path":"\/sm\/0\/plain\/https:\/\/spryntz-qa-bucket.s3.ap-south-1.amazonaws.com\/d0a063\/profile\/50efe2d7b858305.jpg@webp","image_fit":"https:\/\/images.spryntzqa.com\/insecure\/fit\/","original":"d0a063\/profile\/50efe2d7b858305.jpg","original_image":"https:\/\/spryntz-qa-bucket.s3.ap-south-1.amazonaws.com\/d0a063\/profile\/50efe2d7b858305.jpg"},"email_token":"499302","email_token_valid_till":"2023-08-09 05:44:15","phone_token":"649970","phone_token_valid_till":"2023-08-09 05:44:15","is_email_verified":0,"is_phone_verified":0,"code":"d0a063","is_superadmin":0,"is_admin":1,"title":"Mr.","timezone_id":null,"timezone":null,"import_user_id":null,"balance_loyalty_point":0,"last_login_at":null,"deleted_at":null,"restaurant_admin":1,"restaurant_user":1,"fleet_provider_admin":0,"fleet_provider_user":0,"end_user":0,"is_chef":0,"loyalty_name":{"loyalty_name":"NO","count_loyalty_points_earned":0},"country_code":{"id":99,"code":"IN","name":"INDIA","nicename":"India","iso3":"IND","numcode":356,"phonecode":91,"created_at":null,"updated_at":null}}}
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>10:29:31 am</td>
+				<td class='step-details'>
+						Assertion failed: Expected status code is  Incorrect expected [401] but found [200]
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:31 am</td>
+				<td class='step-details'>
+						ROWNUMBER3row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:31 am</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:31 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:32 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+813ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:31 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:32 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER4and Method is:POST
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:32 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:32 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v1/manager/register
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:32 am</td>
+				<td class='step-details'>
+						Payload :{
+"avatar" : "/Users/khalidmithaigar/Downloads/manager-profile-image.png",
+"system_id" : "44443DDDWWxxEE@",
+"email" : "qwemanager@gmail.com",
+"name": "qwe manager",
+"title" : "Mr.",
+"dialCode" : "+91",
+"phone_no" : "9088844761",
+"password" : "qwe@1234",
+"confirm_password" : "qwe@1234",
+"vendor_id" : 1,
+"countryData" : "IN"
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:32 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :200
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:32 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"status":"success","message":"Restaurant Manager is updated successfully","data":{"id":578,"name":"qwe manager","email":"qwemanager@gmail.com","description":null,"phone_number":"9088844761","dial_code":"+91","email_verified_at":null,"type":1,"status":1,"country_id":99,"role_id":1,"auth_token":"eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTA0NjA3MDMsImV4cCI6MTY5MzEzOTEwMywiaXNzIjoicm95b29yZGVycy5jb20ifQ.otS-k_-tGPqSdqlBKo3LBf3xe8lAIPQJq7yU29IauL4","system_id":"44443DDDWWxxEE@-M","created_at":"2023-07-20T11:27:36.000000Z","updated_at":"2023-09-14T04:59:38.000000Z","facebook_auth_id":null,"twitter_auth_id":null,"google_auth_id":null,"apple_auth_id":null,"image":{"proxy_url":"https:\/\/images.spryntzqa.com\/insecure\/fill\/","image_path":"\/sm\/0\/plain\/https:\/\/spryntz-qa-bucket.s3.ap-south-1.amazonaws.com\/d0a063\/profile\/a9d8c4cd44c1a21.jpg@webp","image_fit":"https:\/\/images.spryntzqa.com\/insecure\/fit\/","original":"d0a063\/profile\/a9d8c4cd44c1a21.jpg","original_image":"https:\/\/spryntz-qa-bucket.s3.ap-south-1.amazonaws.com\/d0a063\/profile\/a9d8c4cd44c1a21.jpg"},"email_token":"927802","email_token_valid_till":"2023-07-20 11:37:36","phone_token":"906190","phone_token_valid_till":"2023-07-20 11:37:36","is_email_verified":0,"is_phone_verified":0,"code":"d0a063","is_superadmin":0,"is_admin":0,"title":"Mr.","timezone_id":null,"timezone":null,"import_user_id":null,"balance_loyalty_point":0,"last_login_at":null,"deleted_at":null,"restaurant_admin":0,"restaurant_user":1,"fleet_provider_admin":0,"fleet_provider_user":0,"end_user":0,"is_chef":0,"loyalty_name":{"loyalty_name":"NO","count_loyalty_points_earned":0},"country_code":{"id":99,"code":"IN","name":"INDIA","nicename":"India","iso3":"IND","numcode":356,"phonecode":91,"created_at":null,"updated_at":null}}}
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>10:29:32 am</td>
+				<td class='step-details'>
+						Assertion failed: Expected status code is  Incorrect expected [401] but found [200]
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:32 am</td>
+				<td class='step-details'>
+						ROWNUMBER4row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:32 am</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:32 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:34 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+664ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:32 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:34 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER5and Method is:POST
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:34 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:34 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v1/restaurant-user/register
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:34 am</td>
+				<td class='step-details'>
+						Payload :{    
+"avatar" : "/Users/khalidmithaigar/Downloads/user-profile-image.png",
+"system_id" : "44443DDDWWxxEE@",
+"email" : "paradiseuser@spryntz.com",
+"name" : "Paradise User",
+"title" : "Mr.",
+"dialCode" : "+91",
+"phone_no" : "9088877761",
+"password" : "MyStrongPass@123",
+"confirm_password" : "MyStrongPass@123",
+"vendor_id" : 1,
+"countryData" : "IN"
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:34 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :200
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:34 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"status":"failed","message":"Phone number is already exists"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>10:29:34 am</td>
+				<td class='step-details'>
+						Assertion failed: Expected status code is  Incorrect expected [401] but found [200]
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:34 am</td>
+				<td class='step-details'>
+						ROWNUMBER5row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:34 am</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:34 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:35 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+837ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:34 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:35 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER6and Method is:GET
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:35 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:35 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v3/restaurant/getcuisines
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:35 am</td>
+				<td class='step-details'>
+						Payload :{}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:35 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :401
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:35 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"Invalid Token","message":"Session Expired"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:35 am</td>
+				<td class='step-details'>
+						Assertion passed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:35 am</td>
+				<td class='step-details'>
+						ROWNUMBER6row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:35 am</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:35 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:36 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+886ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:35 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:36 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER7and Method is:POST
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:36 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:36 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v3/restaurant/createupdaterestaurantCuisine
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:36 am</td>
+				<td class='step-details'>
+						Payload :{"data" : [
+    {
+      "category_id" : 5, 
+      "status" : 1
+    },
+    {
+      "category_id" : 6, 
+      "status" : 1
+    }
+            ]
+  }
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:36 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :401
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:36 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"Invalid Token","message":"Session Expired"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:36 am</td>
+				<td class='step-details'>
+						Assertion passed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:36 am</td>
+				<td class='step-details'>
+						ROWNUMBER7row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:36 am</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:36 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:37 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+847ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:36 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:37 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER8and Method is:GET
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:37 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:37 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v3/restaurant/getparentcategories/645
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:37 am</td>
+				<td class='step-details'>
+						Payload :{}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:37 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :401
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:37 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"Invalid Token","message":"Session Expired"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:37 am</td>
+				<td class='step-details'>
+						Assertion passed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:37 am</td>
+				<td class='step-details'>
+						ROWNUMBER8row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:37 am</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:37 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:38 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+834ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:37 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:38 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER9and Method is:POST
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:38 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:38 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v3/restaurant/addnewcategories
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:38 am</td>
+				<td class='step-details'>
+						Payload :{"data" : [{
+            "name": "Rice",
+            "parent_id": 1
+        }],
+        "vendor_id" : 645,
+        "language_id" : 1,
+        "owner_id " : 645
+        }
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:38 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :401
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:38 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"Invalid Token","message":"Session Expired"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:38 am</td>
+				<td class='step-details'>
+						Assertion passed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:38 am</td>
+				<td class='step-details'>
+						ROWNUMBER9row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:38 am</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:38 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:39 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+856ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:38 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER10and Method is:POST
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v3/restaurant/createcategories
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						Payload :{
+    "data": [
+                {
+                    "name": "South Indian Special",
+                    "code": "100"
+                },
+                {
+                    "name": "Dosa Special",
+                    "code": "100"
+                },
+                {
+                    "name": "Meals Special",
+                    "code": "100",
+                    "children": [
+                        {
+                            "name": "South Indian Meals",
+                            "code": "100"
+                        }
+                    ]
+                }
+            ], 
+    "language_id": 1, 
+    "owner_id": 645, 
+    "vendor_id": 645
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :401
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"Invalid Token","message":"Session Expired"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						Assertion passed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						ROWNUMBER10row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:39 am</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:39 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:39 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+759ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER11and Method is:POST
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v1/mystore/vendor/category
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						Payload :{
+    "vendor_id":645
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :401
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"Invalid Token","message":"Session Expired"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						Assertion passed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						ROWNUMBER11row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:39 am</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:39 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:40 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+983ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:39 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:40 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER12and Method is:POST
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:40 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:40 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v3/restaurant/dishes_options
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:40 am</td>
+				<td class='step-details'>
+						Payload :{
+    "min_select":"0",
+    "max_select":"1",
+    "title": "Add OnTesting Purposess",
+    "vendor_id": "999",
+    "language_id":1,
+    "options_data" : [{"name":"Half","price":"0"},{"name":"Full","price":"2"}]
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:40 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :401
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:40 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"Invalid Token","message":"Session Expired"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:40 am</td>
+				<td class='step-details'>
+						Assertion passed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:40 am</td>
+				<td class='step-details'>
+						ROWNUMBER12row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:40 am</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:40 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:41 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+863ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:40 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:41 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER13and Method is:GET
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:41 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:41 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v1/mystore/vendor/products-with-category/list/645
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:41 am</td>
+				<td class='step-details'>
+						Payload :{}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:41 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :401
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:41 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"Invalid Token","message":"Session Expired"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:41 am</td>
+				<td class='step-details'>
+						Assertion passed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:41 am</td>
+				<td class='step-details'>
+						ROWNUMBER13row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:41 am</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:41 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:42 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+987ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:41 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:42 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER14and Method is:POST
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:42 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:42 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v3/restaurant/insert_tags
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:42 am</td>
+				<td class='step-details'>
+						Payload :language_id:1
+tags:[{"item":"Lava6","id":1},{"item":"Lava5","id":2}]
+product_id:57
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:42 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :401
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:42 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"Invalid Token","message":"Session Expired"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:42 am</td>
+				<td class='step-details'>
+						Assertion passed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:42 am</td>
+				<td class='step-details'>
+						ROWNUMBER14row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:42 am</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:42 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:43 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+836ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:42 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:43 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER15and Method is:GET
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:43 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:43 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v3/restaurant/fetchtags
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:43 am</td>
+				<td class='step-details'>
+						Payload :{}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:43 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :401
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:43 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"Invalid Token","message":"Session Expired"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:43 am</td>
+				<td class='step-details'>
+						Assertion passed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:43 am</td>
+				<td class='step-details'>
+						ROWNUMBER15row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:43 am</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:43 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:44 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+800ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:43 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:44 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER16and Method is:GET
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:44 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:44 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v3/restaurant/onboarding_timelineinfo
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:44 am</td>
+				<td class='step-details'>
+						Payload :{}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:44 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :401
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:44 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"Invalid Token","message":"Session Expired"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:44 am</td>
+				<td class='step-details'>
+						Assertion passed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:44 am</td>
+				<td class='step-details'>
+						ROWNUMBER16row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:44 am</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:44 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:45 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+871ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:44 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:45 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER17and Method is:POST
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:45 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:45 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v3/create_default_service_area/645
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:45 am</td>
+				<td class='step-details'>
+						Payload :{
+    "radius": 50
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:45 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :401
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:45 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"Invalid Token","message":"Session Expired"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:45 am</td>
+				<td class='step-details'>
+						Assertion passed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:45 am</td>
+				<td class='step-details'>
+						ROWNUMBER17row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:45 am</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:45 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:46 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+784ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:45 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER18and Method is:POST
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						APIFunctionName:End User onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v1/auth/register
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						Payload :{
+    "name": "Godzilla 2",
+    "dial_code": "91",
+    "country_code" : "IN"
+    "phone_number": "7888523047",
+    "email": "godzillaSingh782@yopmail.com",
+    "password": "1234qwer",
+    "device_type": "Android",
+    "device_token": "sadassa",}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :422
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"The email or phone number field is required."}
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						Assertion failed: Expected status code is  Incorrect expected [401] but found [422]
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						ROWNUMBER18row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:46 am</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:46 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:46 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+782ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER19and Method is:GET
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v3/restaurant/getcategories?code=101
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						Payload :{}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :401
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"Invalid Token","message":"Session Expired"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						Assertion passed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						ROWNUMBER19row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>Spryntz RestaurantOnboarding API</span>
+						<span class='test-time'>Sep 14, 2023 10:29:46 am</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 14, 2023 10:29:46 am</span>
+	<span class='label end-time'>Sep 14, 2023 10:29:47 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+873ms</span>
+</div>
+<div class='test-desc'>API Testing both Positive and negative </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:46 am</td>
+				<td class='step-details'>
+						Starting the APItest
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:47 am</td>
+				<td class='step-details'>
+						RowNum is :ROWNUMBER20and Method is:POST
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:47 am</td>
+				<td class='step-details'>
+						APIFunctionName:Restaurant onboarding
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:47 am</td>
+				<td class='step-details'>
+						EndPoint:https://spryntzqa.com/api/v3/restaurant/create_dishes
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:47 am</td>
+				<td class='step-details'>
+						Payload :{
+    "about_dish": "Serves 1 | special prawns biryani, served with raita", 
+    "category_id": 387, 
+    "cuisine_id": 2, 
+    "dish_name": "Prawn Biryani", 
+    "price": "12", 
+"restaurant_name": "Hotel KA",
+    "vendor_id": 220
+}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:47 am</td>
+				<td class='step-details'>
+						ActualStatusCode is :401
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:29:47 am</td>
+				<td class='step-details'>
+						ActualResponseBody is :{"error":"Invalid Token","message":"Session Expired"}
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:47 am</td>
+				<td class='step-details'>
+						Assertion passed
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:29:47 am</td>
+				<td class='step-details'>
+						ROWNUMBER20row datas are executed successfully
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>19</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>0</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Sep 14, 2023 10:29:23 am</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Sep 14, 2023 10:29:47 am</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 0m 24s+406ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 19,
+				passParent: 14,
+				failParent: 5,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 5,
+				childCount: 0,
+				passChild: 0,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 0,
+				grandChildCount: 0,
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		<script>
+			var timeline = {
+			        "Spryntz RestaurantOnboarding API":3.135,"Spryntz RestaurantOnboarding API":1.83,"Spryntz RestaurantOnboarding API":1.813,"Spryntz RestaurantOnboarding API":1.664,"Spryntz RestaurantOnboarding API":0.837,"Spryntz RestaurantOnboarding API":0.886,"Spryntz RestaurantOnboarding API":0.847,"Spryntz RestaurantOnboarding API":0.834,"Spryntz RestaurantOnboarding API":0.856,"Spryntz RestaurantOnboarding API":0.759,"Spryntz RestaurantOnboarding API":0.983,"Spryntz RestaurantOnboarding API":0.863,"Spryntz RestaurantOnboarding API":0.987,"Spryntz RestaurantOnboarding API":0.836,"Spryntz RestaurantOnboarding API":0.8,"Spryntz RestaurantOnboarding API":0.871,"Spryntz RestaurantOnboarding API":0.784,"Spryntz RestaurantOnboarding API":0.782,"Spryntz RestaurantOnboarding API":0.873
+			};
+		</script>
+	
+		  <script src='https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+		</script>
+	</body>
+</html>

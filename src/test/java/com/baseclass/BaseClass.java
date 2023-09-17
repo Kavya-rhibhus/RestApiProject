@@ -12,9 +12,9 @@ public class BaseClass {
 	public   String   ReportName;
 	public ExtentReports extent;
 	public ExtentTest test;
-	 String  Reportpath="C:\\Users\\desktop\\eclipse\\RestApi_Automation_All_Projects\\ApiAutomation\\src\\test\\java\\com\\";
+   String  Reportpath="C:\\Users\\HP\\eclipse\\newapitestingautomation\\src\\test\\java\\com";
 	
-    public String  SpryntzReportPath = Reportpath+"SpryntzApiTesting\\Spryntz-Api-Report\\";
+    public String  SpryntzReportPath = Reportpath+"\\SpryntzApiTesting\\Spryntz-Api-Report\\";
     public String  RedevRaffoluxReportPath = Reportpath+"RedevApiTesting\\Redev-Raffolux-Api-Report\\";
     public String  UpSchoolReportPath = Reportpath+"UpSchoolApiTesting\\UpSchool-Api-Report\\";
     public String  FactoReportPath=Reportpath+"FactoApiTesting\\Facto-Api-Report";

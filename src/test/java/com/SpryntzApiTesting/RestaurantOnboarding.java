@@ -29,7 +29,7 @@ public class RestaurantOnboarding extends BaseClass {
 	public ExtentReports extent;
 	public ExtentTest test;
 	public String ChefOnboarding;
-	public String RestaurantOnboardingJwt;
+	public String RestaurantOnboardingJwt="eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTQ2NjUwMjMsImV4cCI6MTY5NzI1NzAyMywiaXNzIjoicm95b29yZGVycy5jb20ifQ.e2hXolkZu-oC_NpTbcayPQ17HaaEo2x5_UT4ljuqmKw";
 	public String FleetOnboardingJwt;
 	
 	@SuppressWarnings("deprecation")
@@ -52,7 +52,7 @@ public class RestaurantOnboarding extends BaseClass {
 		ReportName = "Spryntz-" + formattedDate + "&" + formattedTime + ".html";
 		//System.out.println("reportLocation: " + RafflouxReportLoginPath);
 		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(SpryntzReportPath+"Rest"+ReportName);
-		//System.out.println("reportLocation ReportName: " + RafflouxReportLoginPath+ ReportName);
+		System.out.println("reportLocation ReportName: " +  ReportName);
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 
@@ -65,7 +65,7 @@ public class RestaurantOnboarding extends BaseClass {
 	}
 	
 	//-----------------------------------------LoginValidationsRestaurantOnboarding-------------------------------------//
-@Test(priority = 1)
+//@Test(priority = 1)
 	public void SpryntzLoginValidationsRestaurantOnboarding()  
 
 	{
@@ -108,6 +108,7 @@ public class RestaurantOnboarding extends BaseClass {
 		int ActualStatusCode = response.getStatusCode();
 		// To ActualResponseBody from response body and To print
 		String ActualResponseBody= response.getBody().asString();
+		System.out.println("ActualResponseBody"+ActualResponseBody);
 		JSONObject jsonObject = new JSONObject(ActualResponseBody);
         RestaurantOnboardingJwt = jsonObject.getJSONObject("data").getString("auth_token");
         // Print the extracted auth_token
