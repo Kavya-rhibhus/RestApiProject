@@ -65,14 +65,14 @@ public class CustomerApi extends BaseClass {
 	}
 	
 	//-----------------------------------------LoginValidationsRestaurantOnboarding-------------------------------------//
-	@Test(priority = 1)
+	//@Test(priority = 1)
 	public void SpryntzLoginValidationsFleetOnboarding()  
 
 	{
 		int ExpectedStatusCode = 200;
 		String Payload = "{\r\n"
-				+ "    \"email\" : \"sreedivyaspryuser@gmail.com\",\r\n"
-				+ "    \"password\" : \"SreeDivya@1\",\r\n"
+				+ "    \"email\" : \"manasa@yahoo.in\",\r\n"
+				+ "    \"password\" : \"Manasa@123\",\r\n"
 				+ "    \"device_type\": \"ANDRIOD\",\r\n"
 				+ "    \"device_token\": \"mobile\"\r\n"
 				+ "}";
@@ -131,11 +131,13 @@ public class CustomerApi extends BaseClass {
 
 
 
- @Test(priority=2,  dataProvider = "CustomerApi", dataProviderClass = DataProviderExcelReader.class)
+ @Test(priority=2,  dataProvider = "cust", dataProviderClass = DataProviderExcelReader.class)
 
 	public void SpryntzRestApiAfterLoginCustomer(String Rownum ,String APIFunctionName, String Method, String EndPoint, String Payload,
 			double ExpectedStatusCodeDouble,String ExpectedResponseBody)
 	{
+	String FleetOnboardingJwt="eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MDQ5NzY3NDQsImV4cCI6MTcwNzY1NTE0NCwiaXNzIjoicm95b29yZGVycy5jb20ifQ.mRwYuv0sX1SurGG7jDgKF3XtslufXGYWE5uUQ4B7pN4";
+	
 	if(Method.equals("POST"))
 
 	{

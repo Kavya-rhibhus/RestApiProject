@@ -20,6 +20,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.baseclass.BaseClass;
 
+import ChariotApiTesting.DataProviderExcelReader;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -137,7 +138,7 @@ public class RafflouxApiTestClass extends BaseClass{
 
 	{
 		
-		jwtToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxODIwNjIsInVzZXJfZW1haWwiOiJrYXZ5YWFwa0BnbWFpbC5jb20iLCJ1c2VyX2ZpcnN0X25hbWUiOiJLYXZ5YSAiLCJ1c2VyX2xhc3RfbmFtZSI6IktrIiwiaXNTb2NpYWxNZWRpYSI6ZmFsc2UsImlhdCI6MTY5Mzg5OTE4OX0.KFj6-ZiYOJcIhdunRVP7A_n3WMtiJus-uz1ca8JKwzM";
+		jwtToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxODM0ODIsInVzZXJfZW1haWwiOiJna3Jpc2huYW11cnRoeTQ0M0BnbWFpbC5jb20iLCJ1c2VyX2ZpcnN0X25hbWUiOiJrYXZ5YXByZSIsInVzZXJfbGFzdF9uYW1lIjoicHJlIiwiaXNTb2NpYWxNZWRpYSI6ZmFsc2UsImlhdCI6MTcwNDY5NzMzM30.gVj_z7wAYhh_By01ctn9s4jvsVNrjTvgGIfl3Te4zCE";
 		
 		if(Method.equals("POST"))
 
@@ -268,14 +269,140 @@ if(ActualResponseBody.length()<=400) {
 		test.log(Status.PASS, Rownum+ "row datas are executed successfully");
 
 	}
+	
+		
+		
+	else if(Method.equals("DELETE"))
+
+	{ 
+		String jwtToken1=jwtToken;
+    // System.out.println(jwtToken1);
+		test.log(Status.INFO, "Starting the APItest");
+		 Response response = RestAssured
+
+				.given() 
+				
+				.header("Authorization", jwtToken1)
+
+				.baseUri("https://3trw0haj02.execute-api.eu-west-2.amazonaws.com/testing")
+			
+				.contentType(ContentType.JSON).body(ExpectedResponseBody)
+				.when()
+
+				.delete(EndPoint)
+
+				.then()
+
+				.extract()
+
+				.response();
+		 test.log(Status.INFO,"RowNum is :"+ Rownum+  "and "  +"Method is:" +Method);
+		test.log(Status.INFO,"APIFunctionName:"+APIFunctionName);
+		test.log(Status.INFO,"EndPoint:"+ EndPoint);
+	    test.log(Status.INFO,"Payload :"+Payload);
+		
+		// To ActualStatusCode from response body and To Print
+		int ActualStatusCode = response.getStatusCode();
+		System.out.println(" status code is " + ActualStatusCode);
+		
+		test.log(Status.INFO, "ActualStatusCode is :" + ActualStatusCode);
+
+		// To ActualResponseBody from response body and To print
+		String ActualResponseBody = response.getBody().asString();
+if(ActualResponseBody.length()<=400) {
+		test.log(Status.INFO, "ActualResponseBody is :" + ActualResponseBody);
+}
+
+		// To ActualHeaderContentType from response body and To print
+		String ActualHeaderContentType = response.header("Content-Type");
+
+	//	test.log(Status.INFO, "ActualHeaderContentType is  :" + ActualHeaderContentType);
+		// To convert from double to integer (while fetching will get integer as double)
+		// and to print
+		int ExpectedStatusCode = (int) ExpectedStatusCodeDouble;
+
+		try {
+			Assert.assertEquals(ActualStatusCode, ExpectedStatusCode, "Expected status code is  Incorrect");
+			test.log(Status.PASS, "Assertion passed");
+
+		} catch (AssertionError e) {
+
+			test.log(Status.FAIL, "Assertion failed: " + e.getMessage());
+			System.err.println("Test failed: Assertion failed");
+		}
+
+		test.log(Status.PASS, Rownum+ "row datas are executed successfully");
+
 	}
+	
 		
 		
 		
+	
+	else if(Method.equals("PUT"))
+
+	{ 
+		String jwtToken1=jwtToken;
+    // System.out.println(jwtToken1);
+		test.log(Status.INFO, "Starting the APItest");
+		 Response response = RestAssured
+
+				.given() 
+				
+				.header("Authorization", jwtToken1)
+
+				.baseUri("https://3trw0haj02.execute-api.eu-west-2.amazonaws.com/testing")
+			
+				.contentType(ContentType.JSON).body(ExpectedResponseBody)
+				.when()
+
+				.put(EndPoint)
+
+				.then()
+
+				.extract()
+
+				.response();
+		 test.log(Status.INFO,"RowNum is :"+ Rownum+  "and "  +"Method is:" +Method);
+		test.log(Status.INFO,"APIFunctionName:"+APIFunctionName);
+		test.log(Status.INFO,"EndPoint:"+ EndPoint);
+	    test.log(Status.INFO,"Payload :"+Payload);
 		
+		// To ActualStatusCode from response body and To Print
+		int ActualStatusCode = response.getStatusCode();
+		System.out.println(" status code is " + ActualStatusCode);
 		
-		
-		
+		test.log(Status.INFO, "ActualStatusCode is :" + ActualStatusCode);
+
+		// To ActualResponseBody from response body and To print
+		String ActualResponseBody = response.getBody().asString();
+if(ActualResponseBody.length()<=400) {
+		test.log(Status.INFO, "ActualResponseBody is :" + ActualResponseBody);
+}
+
+		// To ActualHeaderContentType from response body and To print
+		String ActualHeaderContentType = response.header("Content-Type");
+
+	//	test.log(Status.INFO, "ActualHeaderContentType is  :" + ActualHeaderContentType);
+		// To convert from double to integer (while fetching will get integer as double)
+		// and to print
+		int ExpectedStatusCode = (int) ExpectedStatusCodeDouble;
+
+		try {
+			Assert.assertEquals(ActualStatusCode, ExpectedStatusCode, "Expected status code is  Incorrect");
+			test.log(Status.PASS, "Assertion passed");
+
+		} catch (AssertionError e) {
+
+			test.log(Status.FAIL, "Assertion failed: " + e.getMessage());
+			System.err.println("Test failed: Assertion failed");
+		}
+
+		test.log(Status.PASS, Rownum+ "row datas are executed successfully");
+
+	}
+	
+	}
 		
 		
 		

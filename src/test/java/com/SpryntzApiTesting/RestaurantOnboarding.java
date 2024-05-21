@@ -29,7 +29,7 @@ public class RestaurantOnboarding extends BaseClass {
 	public ExtentReports extent;
 	public ExtentTest test;
 	public String ChefOnboarding;
-	public String RestaurantOnboardingJwt="eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTQ2NjUwMjMsImV4cCI6MTY5NzI1NzAyMywiaXNzIjoicm95b29yZGVycy5jb20ifQ.e2hXolkZu-oC_NpTbcayPQ17HaaEo2x5_UT4ljuqmKw";
+	public String RestaurantOnboardingJwt="eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MDQ3NzQ0MDMsImV4cCI6MTcwNzQ1MjgwMywiaXNzIjoicm95b29yZGVycy5jb20ifQ.mVS8wEiUceLD_aEDt_WZrJHTHFE37BBOKZS5X3kyMRM";
 	public String FleetOnboardingJwt;
 	
 	@SuppressWarnings("deprecation")
@@ -51,7 +51,7 @@ public class RestaurantOnboarding extends BaseClass {
 		System.out.println("Current Time: " + formattedTime);
 		ReportName = "Spryntz-" + formattedDate + "&" + formattedTime + ".html";
 		//System.out.println("reportLocation: " + RafflouxReportLoginPath);
-		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(SpryntzReportPath+"Rest"+ReportName);
+		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(SpryntzReportPath+"Space"+ReportName);
 		System.out.println("reportLocation ReportName: " +  ReportName);
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
@@ -61,7 +61,7 @@ public class RestaurantOnboarding extends BaseClass {
  
 	@BeforeMethod
 	public void beforeMethod() {
-		test = extent.createTest("Spryntz RestaurantOnboarding API", "API Testing both Positive and negative");
+		test = extent.createTest("Spryntz Restaurant API", "API Testing");
 	}
 	
 	//-----------------------------------------LoginValidationsRestaurantOnboarding-------------------------------------//
@@ -82,7 +82,7 @@ public class RestaurantOnboarding extends BaseClass {
 				+ "\r\n"
 				+ "}";
 	//	String EndPoint = "/v1/signIn";
-		String Expectedjwt = "eyJ1c2VyX2lkIjoxNTEwNjMsInVzZXJfZW1haWwiOiJ2ZWVyYS5yYWdoYXZhbkByaGliaHVzLmNvbSIsInVzZXJfZmlyc3RfbmFtZSI6InZlZXJhIiwidXNlcl9sYXN0X25hbWUiOiJyYWdoYXZhbiIsImlhdCI6MTY4NTMzMjEwM30";
+		String Expectedjwt = "eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MDM2NzA0NzUsImV4cCI6MTcwNjM0ODg3NSwiaXNzIjoicm95b29yZGVycy5jb20ifQ.dAyjEp1sPCGI8DeIdF-45vVa0aqQ3fUwNOtPe2TWvCU";
         String Method="post";
         String APIFunctionName="Login";
         		String EndPoint="/v1/login";
@@ -136,11 +136,13 @@ public class RestaurantOnboarding extends BaseClass {
 //--------------------------RestaurantOnboarding-valid jwt-----------------------------------------------------------------
 
 
- @Test(priority=2,  dataProvider = "RestaurantOnboarding", dataProviderClass = DataProviderExcelReader.class)
+@Test(priority=2,  dataProvider = "RestaurantOnboarding", dataProviderClass = DataProviderExcelReader.class)
 
-public void SpryntzRestApiAfterLoginRestaurantOnboarding(String Rownum ,String APIFunctionName, String Method, String EndPoint, String Payload,
-		double ExpectedStatusCodeDouble,String ExpectedResponseBody)
+public void Spaceband(String Rownum ,String APIFunctionName, String Method, String EndPoint, String Payload,
+		double  ExpectedStatusCodeDouble,String ExpectedResponseBody)
 {
+String RestaurantOnboardingJwt ="eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MDQ5NDY0MTEsImV4cCI6MTcwNzYyNDgxMSwiaXNzIjoicm95b29yZGVycy5jb20ifQ.teMwnvvbyvZkVQFRLl_3qHfgo5VYPRzjyjfnojs2njc";
+
 	
 	
 	
@@ -183,7 +185,7 @@ public void SpryntzRestApiAfterLoginRestaurantOnboarding(String Rownum ,String A
 //test.log(Status.INFO, "ActualHeaderContentType is  :" + ActualHeaderContentType);
 	// To convert from double to integer (while fetching will get integer as double)
 	// and to print
-	int ExpectedStatusCode = (int) ExpectedStatusCodeDouble;
+int ExpectedStatusCode = (int) ExpectedStatusCodeDouble;
 
 	try {
 		Assert.assertEquals(ActualStatusCode, ExpectedStatusCode, "Expected status code is  Incorrect");
@@ -295,7 +297,7 @@ System.err.println("Test failed: Assertion failed");
 
 //@Test(priority=3,  dataProvider = "RestaurantOnboarding", dataProviderClass = DataProviderExcelReader.class)
 
-public void SpryntzRestApiAfterLoginRestaurantOnboardinginvalidjwt(String Rownum ,String APIFunctionName, String Method, String EndPoint, String Payload,
+public void Sprytnzinvalidjwt(String Rownum ,String APIFunctionName, String Method, String EndPoint, String Payload,
 		double ExpectedStatusCodeDouble,String ExpectedResponseBody)
 {
 	

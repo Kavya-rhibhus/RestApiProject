@@ -18,23 +18,23 @@ import com.baseclass.BaseClass;
 
 public class DataProviderExcelReader extends BaseClass{
 	
-	static String filepath="C:\\Users\\HP\\eclipse\\newapitestingautomation\\src\\test\\java\\com\\SpryntzApiTesting\\Api-List-Spryntz\\SpryntzApiListFunct.xlsx";
-	//static String sheetnameAfterlogin="Restaurant onboarding";
-	//static String sheetnameChef="Chef";
-	static String sheetnameChef="ChefPNTest";
-	
-	static String sheetnameRest="Login_Otp";
-	static String sheetnameFleet="NewFleet";
-	static String sheetnameCust="Cust1";
-	 
-	
+static String filepath="C:\\Users\\HP\\eclipse\\newapitestingautomation\\src\\test\\java\\com\\SpryntzApiTesting\\Api-List-Spryntz\\Spryntz API functional testing format.xlsx";
+//static String restSheet="Restaurant_Onboarding";
+	static String chefSheet="Chef_Onboarding"; 
+	static String fleetSheet="Fleet_Provider_Onboarding";
+static String custSheet="End_User_Registration"; 
+ //static String custSheet="Customer_B.O";
+			static String restSheet="Restaurant_B.O";
+					//static String restSheet="Rest_Fleet_Driver";
+	  
+	//static String sheetnameCust="End_User_Registration";
 		@DataProvider(name = "RestaurantOnboarding")
 	    public static Object[][] readExcelData() throws IOException {
 	        List<Object[]> data = new ArrayList<>();
 	        File file = new File(filepath);
 	          FileInputStream inputStream = new FileInputStream(file);
 	        Workbook workbook = WorkbookFactory.create(inputStream);
-	        Sheet sheet = workbook.getSheet(sheetnameRest);
+	        Sheet sheet = workbook.getSheet(restSheet);
 	        int rowCount = sheet.getLastRowNum();
 	         for (int i = 1; i <= rowCount; i++) { // start from second row  
 	            Row row = sheet.getRow(i);
@@ -77,13 +77,14 @@ public class DataProviderExcelReader extends BaseClass{
 	    }
 	    
 
-		@DataProvider(name = "ChefOnboarding")
-	    public static Object[][] readExcelData2() throws IOException {
+	   
+	    @DataProvider(name = "chef")
+	    public static Object[][] readExcelData13() throws IOException {
 	        List<Object[]> data = new ArrayList<>();
 	        File file = new File(filepath);
 	          FileInputStream inputStream = new FileInputStream(file);
 	        Workbook workbook = WorkbookFactory.create(inputStream);
-	        Sheet sheet = workbook.getSheet(sheetnameChef);
+	        Sheet sheet = workbook.getSheet(chefSheet);
 	        int rowCount = sheet.getLastRowNum();
 	         for (int i = 1; i <= rowCount; i++) { // start from second row  
 	            Row row = sheet.getRow(i);
@@ -110,14 +111,13 @@ public class DataProviderExcelReader extends BaseClass{
 	        
 	        return data.toArray(new Object[0][0]);
 	    }
-
-		@DataProvider(name = "FleetOnboarding")
-	    public static Object[][] readExcelData3() throws IOException {
+	    @DataProvider(name = "cust")
+	    public static Object[][] readExcelData1() throws IOException {
 	        List<Object[]> data = new ArrayList<>();
 	        File file = new File(filepath);
 	          FileInputStream inputStream = new FileInputStream(file);
 	        Workbook workbook = WorkbookFactory.create(inputStream);
-	        Sheet sheet = workbook.getSheet(sheetnameFleet);
+	        Sheet sheet = workbook.getSheet(custSheet);
 	        int rowCount = sheet.getLastRowNum();
 	         for (int i = 1; i <= rowCount; i++) { // start from second row  
 	            Row row = sheet.getRow(i);
@@ -144,15 +144,13 @@ public class DataProviderExcelReader extends BaseClass{
 	        
 	        return data.toArray(new Object[0][0]);
 	    }
-
-
-		@DataProvider(name = "CustomerApi")
-	    public static Object[][] readExcelData31() throws IOException {
+	    @DataProvider(name = "fleet")
+	    public static Object[][] readExcelData11() throws IOException {
 	        List<Object[]> data = new ArrayList<>();
 	        File file = new File(filepath);
-	        FileInputStream inputStream = new FileInputStream(file);
+	          FileInputStream inputStream = new FileInputStream(file);
 	        Workbook workbook = WorkbookFactory.create(inputStream);
-	        Sheet sheet = workbook.getSheet(sheetnameCust);
+	        Sheet sheet = workbook.getSheet(fleetSheet);
 	        int rowCount = sheet.getLastRowNum();
 	         for (int i = 1; i <= rowCount; i++) { // start from second row  
 	            Row row = sheet.getRow(i);

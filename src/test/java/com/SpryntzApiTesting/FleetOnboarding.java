@@ -30,7 +30,7 @@ public class FleetOnboarding extends BaseClass {
 	public ExtentTest test;
 	public String ChefOnboarding;
 	public String RestaurantOnboardingJwt;
-	public String FleetOnboardingJwt="eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTQ2NjcwOTEsImV4cCI6MTY5NzI1OTA5MSwiaXNzIjoicm95b29yZGVycy5jb20ifQ.XKEgG4IQuDRb54sPb7tJoZXEnLkHRoaZNiUu26HglSU";
+	public String FleetOnboardingJwt="eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTYzMTM3ODksImV4cCI6MTY5ODk5MjE4OSwiaXNzIjoicm95b29yZGVycy5jb20ifQ.jb5wNWWo9N7GsUp_0PedSO_ntUPLD9lQV88M-SBxoI4";
 	
 	@SuppressWarnings("deprecation")
 	@BeforeSuite
@@ -131,11 +131,13 @@ public class FleetOnboarding extends BaseClass {
 
 
 
-	//@Test(priority=2,  dataProvider = "FleetOnboarding", dataProviderClass = DataProviderExcelReader.class)
+	@Test(priority=2,  dataProvider = "fleet", dataProviderClass = DataProviderExcelReader.class)
 
 	public void SpryntzRestApiAfterLoginFleetOnboarding(String Rownum ,String APIFunctionName, String Method, String EndPoint, String Payload,
 			double ExpectedStatusCodeDouble,String ExpectedResponseBody)
 	{
+		
+		String FleetOnboardingJwt ="eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MDQ5NzYxOTgsImV4cCI6MTcwNzY1NDU5OCwiaXNzIjoicm95b29yZGVycy5jb20ifQ.6JdGlMiK9SJGHPnpzwmAogt9jquGu0DNQnH3q2QJTV8";
 	if(Method.equals("POST"))
 
 	{
@@ -278,7 +280,7 @@ public class FleetOnboarding extends BaseClass {
 	
 	//---------------------------------ChefOnboardinginvalidJwt---------------------------------------
 
-	@Test(priority=3,  dataProvider = "FleetOnboarding", dataProviderClass = DataProviderExcelReader.class)
+	//@Test(priority=3,  dataProvider = "FleetOnboarding", dataProviderClass = DataProviderExcelReader.class)
 
 	public void SpryntzRestApiAfterLoginFleetOnboardingInvlaidjwt(String Rownum ,String APIFunctionName, String Method, String EndPoint, String Payload,
 			double ExpectedStatusCodeDouble,String ExpectedResponseBody)

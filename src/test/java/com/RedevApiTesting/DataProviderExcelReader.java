@@ -18,9 +18,11 @@ import com.baseclass.BaseClass;
 
 public class DataProviderExcelReader extends BaseClass{
 	
-public static String 	F_NAME="C:\\Users\\desktop\\eclipse\\RestApi_Automation_All_Projects\\ApiAutomation\\src\\test\\java\\com\\RedevApiTesting\\Raffloux-API-ExcelData\\RD-Raffloux-final-ApiList.xlsx";
-public static String 	S_name="Api-Final";
-
+//public static String 	F_NAME="C:\\Users\\HP\\eclipse\\newapitestingautomation\\src\\test\\java\\com\\RedevApiTesting\\Raffloux-API-ExcelData\\RD-Raffloux-final-ApiList.xlsx";
+//public static String 	S_name="final-pn-redev";
+	public static String F_NAME="C:\\Users\\HP\\eclipse\\newapitestingautomation\\src\\test\\java\\com\\RedevApiTesting\\Raffloux-API-ExcelData\\AdminPortalApi'sTestCasesRedev.xlsx";
+   // public static String 	S_name="Api-redev";
+    public static String 	S_name="AdminApis";
 		@DataProvider(name = "LoginSheet")
 	    public static Object[][] readExcelData() throws IOException {
 	        List<Object[]> data = new ArrayList<>();

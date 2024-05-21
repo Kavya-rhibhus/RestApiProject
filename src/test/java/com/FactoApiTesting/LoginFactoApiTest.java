@@ -31,7 +31,7 @@ public class LoginFactoApiTest {
 
 				.extract()
 
-				.response();
+				.response(); 
 		// To ActualStatusCode from response body and To Print
 		int ActualStatusCode = response.getStatusCode();
 		

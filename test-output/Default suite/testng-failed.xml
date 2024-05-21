@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SpryntzApiTesting.RestaurantOnboarding">
+      <class name="MonacoAdminPortalPKG.MWCApiTestclass">
         <methods>
-          <include name="SpryntzLoginValidationsRestaurantOnboarding"/>
-          <include name="tearDown"/>
           <include name="beforeMethod"/>
+          <include name="tearDown"/>
+          <include name="MWCAdminRestApiTest"/>
           <include name="setUp"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.SpryntzApiTesting.RestaurantOnboarding -->
+      </class> <!-- MonacoAdminPortalPKG.MWCApiTestclass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

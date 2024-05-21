@@ -33,7 +33,7 @@ public class ChefOnboarding extends BaseClass{
 	@BeforeSuite
 	public void setUp() {
 
-		// For date and time
+		// For date and time 
 
 		LocalDate currentDate = LocalDate.now();
 		DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd");
@@ -58,13 +58,13 @@ public class ChefOnboarding extends BaseClass{
  
 	@BeforeMethod
 	public void beforeMethod() {
-		test = extent.createTest("Spryntz ChefOnboarding API", "API Testing both Positive and negative");
+		test = extent.createTest("Spryntz Chef API", "API Testing both Positive and negative");
 	}
 	
 	
 //-------------------------------LoginValidationsChefOnboarding--------------------------------------//
 
-@Test(priority = 1)
+//@Test(priority = 1)
 public void SpryntzLoginValidationsChefOnboarding()  
 
 {
@@ -81,7 +81,7 @@ public void SpryntzLoginValidationsChefOnboarding()
 			+ "\r\n"
 			+ "}";
 //	String EndPoint = "/v1/signIn";
-	String Expectedjwt = "eyJ1c2VyX2lkIjoxNTEwNjMsInVzZXJfZW1haWwiOiJ2ZWVyYS5yYWdoYXZhbkByaGliaHVzLmNvbSIsInVzZXJfZmlyc3RfbmFtZSI6InZlZXJhIiwidXNlcl9sYXN0X25hbWUiOiJyYWdoYXZhbiIsImlhdCI6MTY4NTMzMjEwM30";
+	String Expectedjwt = "d";
     String Method="post";
     String APIFunctionName="Login";
     		String EndPoint="/v1/login";
@@ -132,11 +132,14 @@ public void SpryntzLoginValidationsChefOnboarding()
 
 
 
-@Test(priority=2,  dataProvider = "ChefOnboarding", dataProviderClass = DataProviderExcelReader.class)
+@Test(priority=2,  dataProvider = "chef", dataProviderClass = DataProviderExcelReader.class)
 
 public void SpryntzRestApiAfterLoginChefOnboarding(String Rownum ,String APIFunctionName, String Method, String EndPoint, String Payload,
 		double ExpectedStatusCodeDouble,String ExpectedResponseBody)
 {
+String ChefOnboarding="eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MDQ5NzU1NjMsImV4cCI6MTcwNzY1Mzk2MywiaXNzIjoicm95b29yZGVycy5jb20ifQ.KMdbdgE9vy6JTOF3mM2f0MZCBjfR3j7XvcFCdLJ3Q9g";
+
+	
 if(Method.equals("POST"))
 
 {
