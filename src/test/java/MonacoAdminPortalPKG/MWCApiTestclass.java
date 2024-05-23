@@ -49,8 +49,8 @@ public class MWCApiTestclass extends BaseClass{
 		String formattedTime = sdf.format(currentTime);
 		System.out.println("Current Date: " + formattedDate);
 		System.out.println("Current Time: " + formattedTime);
-		ReportName = "MWC-" + formattedDate + "&" + formattedTime + ".html";
-		System.out.println("reportLocation: " +"C:\\Users\\HP\\eclipse\\newapitestingautomation\\src\\test\\java\\MonacoAdminPortalPKG\\MWC-Report"+ ReportName);
+		ReportName = "MWCAdmin-" + formattedDate + "&" + formattedTime + ".html";
+		System.out.println("reportLocation: " +"C:\\Users\\HP\\eclipse\\newapitestingautomation\\src\\test\\java\\MonacoAdminPortalPKG\\MWC-Report\\"+ ReportName);
 		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("C:\\Users\\HP\\eclipse\\newapitestingautomation\\src\\test\\java\\MonacoAdminPortalPKG\\MWC-Report\\"+ ReportName);
 		System.out.println("reportname"+ htmlReporter);
 		extent = new ExtentReports();

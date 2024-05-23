@@ -20,9 +20,9 @@ public class DataProviderExcelReader extends BaseClass{
 	
 public static String 	F_NAME="C:\\Users\\HP\\eclipse\\newapitestingautomation\\src\\test\\java\\com\\MonacoTesting\\Api_Excel_Data\\Monaco_Client_Api's_online.xlsx";
 
-//public static String 	S_name="Negative";
+public static String 	S_name="Negative";
 //public static String 	S_name ="DataValidation";
-public static String 	S_name="Sheet2";
+//public static String 	S_name="Sheet2";
  
 		@DataProvider(name = "MWCData")
 	    public static Object[][] readExcelData() throws IOException {

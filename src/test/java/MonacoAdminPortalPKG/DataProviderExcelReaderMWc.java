@@ -22,8 +22,8 @@ public class DataProviderExcelReaderMWc extends BaseClass{
 //public static String 	F_NAME="C:\\Users\\HP\\eclipse\\newapitestingautomation\\src\\test\\java\\com\\RedevApiTesting\\Raffloux-API-ExcelData\\RD-Raffloux-final-ApiList.xlsx";
 //public static String 	S_name="final-pn-redev";
 	public static String F_NAME="C:\\Users\\HP\\eclipse\\newapitestingautomation\\src\\test\\java\\MonacoAdminPortalPKG\\MWC-API-ExcelData\\AdminPortalFinalApiListMWCxlsx.xlsx";
-    public static String 	S_name="DataNegTc";
-   // public static String 	S_name="ChariotApiPositive";
+    public static String 	S_name="AllNegativeTestCase";
+   // public static String 	S_name="Sheet1";
 		@DataProvider(name = "MWC")
 	    public static Object[][] readExcelData() throws IOException {
 	        List<Object[]> data = new ArrayList<>();

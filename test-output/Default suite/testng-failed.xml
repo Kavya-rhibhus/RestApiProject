@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MonacoAdminPortalPKG.MWCApiTestclass">
+      <class name="com.MonacoTesting.MonacoTestClass">
         <methods>
           <include name="beforeMethod"/>
-          <include name="tearDown"/>
-          <include name="MWCAdminRestApiTest"/>
           <include name="setUp"/>
           <include name="afterMethod"/>
+          <include name="tearDown"/>
+          <include name="RestApiLoginValidations"/>
         </methods>
-      </class> <!-- MonacoAdminPortalPKG.MWCApiTestclass -->
+      </class> <!-- com.MonacoTesting.MonacoTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
