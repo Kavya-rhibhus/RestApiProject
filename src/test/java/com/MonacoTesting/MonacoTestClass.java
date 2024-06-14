@@ -1,6 +1,7 @@
 package com.MonacoTesting;
 
 import java.text.SimpleDateFormat;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
@@ -17,7 +18,8 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.baseclass.BaseClass;
 
 import io.restassured.RestAssured;
@@ -47,9 +49,9 @@ public class MonacoTestClass extends BaseClass{
 		String formattedTime = sdf.format(currentTime);
 		System.out.println("Current Date: " + formattedDate);
 		System.out.println("Current Time: " + formattedTime);
-		ReportName = "MWC_Client-" + formattedDate + "&" + formattedTime + ".html";
+		ReportName = "MWC_Client-Negative_Test" + formattedDate + "&" + formattedTime + ".html";
 		//System.out.println("reportLocation: " + RafflouxReportLoginPath);
-		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(MWCReportPath+ ReportName);
+		ExtentSparkReporter htmlReporter = new ExtentSparkReporter(MWCReportPath+ ReportName);
 		System.out.println("reportLocation ReportName: " + MWCReportPath+ ReportName);
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
@@ -58,11 +60,11 @@ public class MonacoTestClass extends BaseClass{
 			
 	
  
-	@BeforeMethod
-	public void beforeMethod() {
-		test = extent.createTest("Monaco Client  APIs", "API Testing both Positive and negative");
-	}
-	
+//	@BeforeMethod
+//	public void beforeMethod() {
+//		test = extent.createTest("Monaco Client  APIs", "API Testing both Positive and negative");
+//	}
+//	
 	
 	
 	@Test(priority = 1)
@@ -136,7 +138,7 @@ public class MonacoTestClass extends BaseClass{
 
 
 	{
-		
+		test = extent.createTest(EndPoint + "API Testing both Positive and negative");
 		jwtToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0Ijp7InVzZXJfaWQiOiJVc2VyIzU3OTU0MWU1LWJiY2EtNGFlNS1hNjNlLTBiNDc4MzkzNDg4MiIsInVzZXJfZW1haWwiOiJndWVzdDEyQGdtYWlsLmNvbSIsInVzZXJfZmlyc3RfbmFtZSI6Imd1ZXN0IiwidXNlcl9sYXN0X25hbWUiOiIxMiIsImlzU29jaWFsTWVkaWEiOmZhbHNlfSwiaWF0IjoxNzE2MzU2MDExfQ.aJVvCC6Q6cQPirFq8ppwlyl2H4CHnL_3gUBoRK4xKjQ";
 		
 		if(Method.equals("POST"))

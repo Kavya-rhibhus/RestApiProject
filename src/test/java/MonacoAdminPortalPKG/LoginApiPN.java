@@ -1,6 +1,7 @@
 package MonacoAdminPortalPKG;
 
 import java.text.SimpleDateFormat;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
@@ -16,7 +17,6 @@ import com.RedevApiTesting.DataProviderExcelReader;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.baseclass.BaseClass;
 
 import io.restassured.RestAssured;
