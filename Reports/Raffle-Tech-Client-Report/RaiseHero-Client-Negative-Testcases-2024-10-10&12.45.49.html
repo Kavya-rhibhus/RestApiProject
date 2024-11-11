@@ -1,0 +1,2492 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Oct 10, 2024 12:45:49 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/clientSignin:Validate the api's by giving invalid method.</p>
+            <p class="text-sm">
+              <span>12:45:51 pm</span> / <span>00:00:03:230</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">/client/auth/clientSignin:Validate the api's by giving invalid method.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:51 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:54 pm</span>
+<span class='badge badge-default'>00:00:03:230</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/clientSignin</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:54 pm</td>
+        <td>
+          RowNum is :Row 2and Method is:PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:54 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid method.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:54 pm</td>
+        <td>
+          EndPoint:/client/auth/clientSignin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:54 pm</td>
+        <td>
+          Payload :{
+    "email": "priyanka.jayakumaran@rhibhus.com",
+    "password": "Rhibhus@123",
+    "keep_signed_in": false
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:54 pm</td>
+        <td>
+          ActualStatusCode is :404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:54 pm</td>
+        <td>
+          ActualResponseBody is :{"status":404,"message":"Not Found"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:45:54 pm</td>
+        <td>
+          Assertion passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:54 pm</td>
+        <td>
+          Row 2row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">client/fetchraffle:Validate the api's by giving invalid method.</p>
+            <p class="text-sm">
+              <span>12:45:55 pm</span> / <span>00:00:00:298</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">client/fetchraffle:Validate the api's by giving invalid method.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:55 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:55 pm</span>
+<span class='badge badge-default'>00:00:00:298</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">client/fetchraffle</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          RowNum is :Row 3and Method is:DELETE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid method.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          EndPoint:client/fetchraffle
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          Payload :{
+    "email": "priyanka.jayakumaran@rhibhus.com"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          ActualStatusCode is :404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          ActualResponseBody is :{"status":404,"message":"Not Found"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          Assertion passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          Row 3row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/changepassword:Validate the api's by giving invalid method.</p>
+            <p class="text-sm">
+              <span>12:45:55 pm</span> / <span>00:00:00:275</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">/client/auth/changepassword:Validate the api's by giving invalid method.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:55 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:55 pm</span>
+<span class='badge badge-default'>00:00:00:275</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/changepassword</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          RowNum is :Row 4and Method is:PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid method.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          EndPoint:/client/auth/changepassword
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          Payload :{
+    "password": "Rhibhus@1234",
+    "confirmPassword": "Rhibhus@1234"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          ActualStatusCode is :404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          ActualResponseBody is :{"status":404,"message":"Not Found"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          Assertion passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:55 pm</td>
+        <td>
+          Row 4row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/twofactorauthentication:Validate the api's by giving invalid method.</p>
+            <p class="text-sm">
+              <span>12:45:55 pm</span> / <span>00:00:00:218</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">/client/auth/twofactorauthentication:Validate the api's by giving invalid method.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:55 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:56 pm</span>
+<span class='badge badge-default'>00:00:00:218</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/twofactorauthentication</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          RowNum is :Row 5and Method is:DELETE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid method.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          EndPoint:/client/auth/twofactorauthentication
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Payload :{
+    "otp": 123456
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          ActualStatusCode is :404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          ActualResponseBody is :{"status":404,"message":"Not Found"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Assertion passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Row 5row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/resendotp:Validate the api's by giving invalid method.</p>
+            <p class="text-sm">
+              <span>12:45:56 pm</span> / <span>00:00:00:180</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">/client/auth/resendotp:Validate the api's by giving invalid method.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:56 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:56 pm</span>
+<span class='badge badge-default'>00:00:00:180</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/resendotp</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          RowNum is :Row 6and Method is:PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid method.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          EndPoint:/client/auth/resendotp
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Payload :{
+    "email": "priyanka.jayakumaran@rhibhus.com"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          ActualStatusCode is :404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          ActualResponseBody is :{"status":404,"message":"Not Found"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Assertion passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Row 6row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/Overview/fetch:Validate the api's by giving invalid method.</p>
+            <p class="text-sm">
+              <span>12:45:56 pm</span> / <span>00:00:00:197</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">/client/Overview/fetch:Validate the api's by giving invalid method.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:56 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:56 pm</span>
+<span class='badge badge-default'>00:00:00:197</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/Overview/fetch</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          RowNum is :Row 7and Method is:DELETE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid method.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          EndPoint:/client/Overview/fetch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Payload :{
+    "startDate": "17/09/2024",
+    "endDate": "23/09/2024",
+    "user_id": "User#pr2554i6-y1a1-41nk-a723-2j6758324010",
+    "id": "Raffle#8034af42-792b-4a37-8cee-a302c43ca1c1"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          ActualStatusCode is :404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          ActualResponseBody is :{"status":404,"message":"Not Found"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Assertion passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Row 7row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/clientSignasfasfin:Validate the api's by giving invalid End point.</p>
+            <p class="text-sm">
+              <span>12:45:56 pm</span> / <span>00:00:00:190</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">/client/auth/clientSignasfasfin:Validate the api's by giving invalid End point.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:56 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:56 pm</span>
+<span class='badge badge-default'>00:00:00:190</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/clientSignasfasfin</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          RowNum is :Row 8and Method is:PUT
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid End point.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          EndPoint:/client/auth/clientSignasfasfin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Payload :{
+    "email": "priyanka.jayakumaran@rhibhus.com",
+    "password": "Rhibhus@123",
+    "keep_signed_in": false
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          ActualStatusCode is :404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          ActualResponseBody is :{"status":404,"message":"Not Found"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Assertion passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:56 pm</td>
+        <td>
+          Row 8row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">client/fetsfsafchraffle:Validate the api's by giving invalid End point.</p>
+            <p class="text-sm">
+              <span>12:45:56 pm</span> / <span>00:00:00:290</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">client/fetsfsafchraffle:Validate the api's by giving invalid End point.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:56 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:57 pm</span>
+<span class='badge badge-default'>00:00:00:290</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">client/fetsfsafchraffle</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          RowNum is :Row 9and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid End point.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          EndPoint:client/fetsfsafchraffle
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Payload :{
+    "email": "priyanka.jayakumaran@rhibhus.com"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          ActualStatusCode is :404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          ActualResponseBody is :{"status":404,"message":"Not Found"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Assertion passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Row 9row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/casfasfhangepassword:Validate the api's by giving invalid End point.</p>
+            <p class="text-sm">
+              <span>12:45:57 pm</span> / <span>00:00:00:193</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">/client/auth/casfasfhangepassword:Validate the api's by giving invalid End point.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:57 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:57 pm</span>
+<span class='badge badge-default'>00:00:00:193</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/casfasfhangepassword</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          RowNum is :Row 10and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid End point.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          EndPoint:/client/auth/casfasfhangepassword
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Payload :{
+    "password": "Rhibhus@1234",
+    "confirmPassword": "Rhibhus@1234"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          ActualStatusCode is :404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          ActualResponseBody is :{"status":404,"message":"Not Found"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Assertion passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Row 10row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/twofactorsfasfsafasfauthentication:Validate the api's by giving invalid End point.</p>
+            <p class="text-sm">
+              <span>12:45:57 pm</span> / <span>00:00:00:174</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">/client/auth/twofactorsfasfsafasfauthentication:Validate the api's by giving invalid End point.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:57 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:57 pm</span>
+<span class='badge badge-default'>00:00:00:174</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/twofactorsfasfsafasfauthentication</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          RowNum is :Row 11and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid End point.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          EndPoint:/client/auth/twofactorsfasfsafasfauthentication
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Payload :{
+    "otp": 123456
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          ActualStatusCode is :404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          ActualResponseBody is :{"status":404,"message":"Not Found"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Assertion passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Row 11row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/sfasfasfresendotp:Validate the api's by giving invalid End point.</p>
+            <p class="text-sm">
+              <span>12:45:57 pm</span> / <span>00:00:00:279</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">/client/auth/sfasfasfresendotp:Validate the api's by giving invalid End point.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:57 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:57 pm</span>
+<span class='badge badge-default'>00:00:00:279</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/sfasfasfresendotp</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          RowNum is :Row 12and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid End point.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          EndPoint:/client/auth/sfasfasfresendotp
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Payload :{
+    "email": "priyanka.jayakumaran@rhibhus.com"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          ActualStatusCode is :404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          ActualResponseBody is :{"status":404,"message":"Not Found"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Assertion passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:57 pm</td>
+        <td>
+          Row 12row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/Overview/fetsfasfch:Validate the api's by giving invalid End point.</p>
+            <p class="text-sm">
+              <span>12:45:57 pm</span> / <span>00:00:00:230</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">/client/Overview/fetsfasfch:Validate the api's by giving invalid End point.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:57 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:58 pm</span>
+<span class='badge badge-default'>00:00:00:230</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/Overview/fetsfasfch</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          RowNum is :Row 13and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid End point.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          EndPoint:/client/Overview/fetsfasfch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          Payload :{
+    "startDate": "17/09/2024",
+    "endDate": "23/09/2024",
+    "user_id": "User#pr2554i6-y1a1-41nk-a723-2j6758324010",
+    "id": "Raffle#8034af42-792b-4a37-8cee-a302c43ca1c1"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          ActualStatusCode is :404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          ActualResponseBody is :{"status":404,"message":"Not Found"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          Assertion passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          Row 13row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/clientSignin:Validate the api's by giving invalid Playload.</p>
+            <p class="text-sm">
+              <span>12:45:58 pm</span> / <span>00:00:00:205</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">/client/auth/clientSignin:Validate the api's by giving invalid Playload.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:58 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:58 pm</span>
+<span class='badge badge-default'>00:00:00:205</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/clientSignin</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          RowNum is :Row 14and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid Playload.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          EndPoint:/client/auth/clientSignin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          Payload :{
+    "em%@#%$!@%ail": "priy24!@$!@#$@#$%anka.jayakumaran@rhibhus.com",
+    "password": "Rhibhsfa#@$^%&#$^@%#us@123",
+    "keep_signed_in": false
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          ActualStatusCode is :500
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          ActualResponseBody is :{"status":500,"message":"Cannot read properties of undefined (reading 'toLowerCase')"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          Assertion failed: Expected status code is  Incorrect expected [404] but found [500]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          Row 14row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">client/fetchraffle:Validate the api's by giving invalid Playload.</p>
+            <p class="text-sm">
+              <span>12:45:58 pm</span> / <span>00:00:00:203</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">client/fetchraffle:Validate the api's by giving invalid Playload.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:58 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:58 pm</span>
+<span class='badge badge-default'>00:00:00:203</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">client/fetchraffle</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          RowNum is :Row 15and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid Playload.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          EndPoint:client/fetchraffle
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          Payload :{
+    "password": "priyank$%$@#$#a.jayakumaran@rhibhus.com"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          ActualStatusCode is :404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          ActualResponseBody is :{"status":404,"message":"Not Found"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          Assertion passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:58 pm</td>
+        <td>
+          Row 15row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/changepassword:Validate the api's by giving invalid Playload.</p>
+            <p class="text-sm">
+              <span>12:45:58 pm</span> / <span>00:00:00:313</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">/client/auth/changepassword:Validate the api's by giving invalid Playload.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:58 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:59 pm</span>
+<span class='badge badge-default'>00:00:00:313</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/changepassword</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          RowNum is :Row 16and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid Playload.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          EndPoint:/client/auth/changepassword
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          Payload :{
+    "first name": "Rhibhus@1234",
+    "confirdasgsdafdsmPassword": "Rhibhus@1234"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          ActualStatusCode is :400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          ActualResponseBody is :{"status":400,"message":"OTP is not verified"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          Assertion failed: Expected status code is  Incorrect expected [404] but found [400]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          Row 16row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/twofactorauthentication:Validate the api's by giving invalid Playload.</p>
+            <p class="text-sm">
+              <span>12:45:59 pm</span> / <span>00:00:00:165</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">/client/auth/twofactorauthentication:Validate the api's by giving invalid Playload.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:59 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:45:59 pm</span>
+<span class='badge badge-default'>00:00:00:165</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/twofactorauthentication</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          RowNum is :Row 17and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid Playload.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          EndPoint:/client/auth/twofactorauthentication
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          Payload :{
+    "lastname": 1#$%@$#23456
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          ActualStatusCode is :400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          ActualResponseBody is :<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>TypeError: Cannot read properties of undefined (reading &#39;message&#39;)<br> &nbsp; &nbsp;at file:///var/task/src/clientHandler.js:39:41<br> &nbsp; &nbsp;at Layer.handle_error (/var/task/node_modules/express/lib/router/layer.js:71:5)<br> &nbsp; &nbsp;at trim_prefix (/var/task/node_modules/express/lib/router/index.js:326:13)<br> &nbsp; &nbsp;at /var/task/node_modules/express/lib/router/index.js:286:9<br> &nbsp; &nbsp;at Function.process_params (/var/task/node_modules/express/lib/router/index.js:346:12)<br> &nbsp; &nbsp;at next (/var/task/node_modules/express/lib/router/index.js:280:10)<br> &nbsp; &nbsp;at Layer.handle_error (/var/task/node_modules/express/lib/router/layer.js:67:12)<br> &nbsp; &nbsp;at trim_prefix (/var/task/node_modules/express/lib/router/index.js:326:13)<br> &nbsp; &nbsp;at /var/task/node_modules/express/lib/router/index.js:286:9<br> &nbsp; &nbsp;at Function.process_params (/var/task/node_modules/express/lib/router/index.js:346:12)</pre>
+</body>
+</html>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          Assertion failed: Expected status code is  Incorrect expected [404] but found [400]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:45:59 pm</td>
+        <td>
+          Row 17row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/resendotp:Validate the api's by giving invalid Playload.</p>
+            <p class="text-sm">
+              <span>12:45:59 pm</span> / <span>00:00:00:900</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">/client/auth/resendotp:Validate the api's by giving invalid Playload.</h5>
+<span class='badge badge-success'>10.10.2024 12:45:59 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:46:00 pm</span>
+<span class='badge badge-default'>00:00:00:900</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/resendotp</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          RowNum is :Row 18and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid Playload.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          EndPoint:/client/auth/resendotp
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          Payload :{
+    "email": "priyanka.jayakufasafdaqwefsmaran@rhibhus.com"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          ActualStatusCode is :200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          ActualResponseBody is :""
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          Assertion failed: Expected status code is  Incorrect expected [404] but found [200]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          Row 18row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/Overview/fetch:Validate the api's by giving invalid Playload.</p>
+            <p class="text-sm">
+              <span>12:46:00 pm</span> / <span>00:00:00:330</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">/client/Overview/fetch:Validate the api's by giving invalid Playload.</h5>
+<span class='badge badge-success'>10.10.2024 12:46:00 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:46:00 pm</span>
+<span class='badge badge-default'>00:00:00:330</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/Overview/fetch</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          RowNum is :Row 19and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          Testcase >: Validate the api's by giving invalid Playload.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          EndPoint:/client/Overview/fetch
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          Payload :{
+    "startDate": "17/09/2024",
+    "endDate": "23/09/2024",
+    "user_id": "Uwfaszcser#pr2554i6-y1a1-41nwrqwsk-a723-2j6758324010",
+    "id": "Raffle#asfasf8034af42-792b-4a37-8cee-a302c43ca1c1"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          ActualStatusCode is :500
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          ActualResponseBody is :{"status":500,"message":"error occured"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          Assertion failed: Expected status code is  Incorrect expected [404] but found [500]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          Row 19row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/clientSignin:To Validate the Email for acceptance of invalid inputs.</p>
+            <p class="text-sm">
+              <span>12:46:00 pm</span> / <span>00:00:00:264</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">/client/auth/clientSignin:To Validate the Email for acceptance of invalid inputs.</h5>
+<span class='badge badge-success'>10.10.2024 12:46:00 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:46:00 pm</span>
+<span class='badge badge-default'>00:00:00:264</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/clientSignin</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          RowNum is :Row 20and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          Testcase >: To Validate the Email for acceptance of invalid inputs.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          EndPoint:/client/auth/clientSignin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          Payload :{
+    "email": "priyanka.jayakumaranrhibcomom",
+    "password": "Rhibhus@123",
+    "keep_signed_in": false
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          ActualStatusCode is :404
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          ActualResponseBody is :{"status":404,"message":"User not found."}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          Assertion passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:00 pm</td>
+        <td>
+          Row 20row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/clientSignin:To Validate the password for acceptance of invalid inputs.</p>
+            <p class="text-sm">
+              <span>12:46:00 pm</span> / <span>00:00:00:180</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">/client/auth/clientSignin:To Validate the password for acceptance of invalid inputs.</h5>
+<span class='badge badge-success'>10.10.2024 12:46:00 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:46:01 pm</span>
+<span class='badge badge-default'>00:00:00:180</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/clientSignin</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          RowNum is :Row 21and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Testcase >: To Validate the password for acceptance of invalid inputs.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          EndPoint:/client/auth/clientSignin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Payload :{
+    "email": "priyanka.jayakumaran@rhibhus.com",
+    "password":13",
+    "keep_signed_in": false
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          ActualStatusCode is :400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          ActualResponseBody is :<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>TypeError: Cannot read properties of undefined (reading &#39;message&#39;)<br> &nbsp; &nbsp;at file:///var/task/src/clientHandler.js:39:41<br> &nbsp; &nbsp;at Layer.handle_error (/var/task/node_modules/express/lib/router/layer.js:71:5)<br> &nbsp; &nbsp;at trim_prefix (/var/task/node_modules/express/lib/router/index.js:326:13)<br> &nbsp; &nbsp;at /var/task/node_modules/express/lib/router/index.js:286:9<br> &nbsp; &nbsp;at Function.process_params (/var/task/node_modules/express/lib/router/index.js:346:12)<br> &nbsp; &nbsp;at next (/var/task/node_modules/express/lib/router/index.js:280:10)<br> &nbsp; &nbsp;at Layer.handle_error (/var/task/node_modules/express/lib/router/layer.js:67:12)<br> &nbsp; &nbsp;at trim_prefix (/var/task/node_modules/express/lib/router/index.js:326:13)<br> &nbsp; &nbsp;at /var/task/node_modules/express/lib/router/index.js:286:9<br> &nbsp; &nbsp;at Function.process_params (/var/task/node_modules/express/lib/router/index.js:346:12)</pre>
+</body>
+</html>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Assertion failed: Expected status code is  Incorrect expected [404] but found [400]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Row 21row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/changepassword:To Validate the password for acceptance of invalid inputs.</p>
+            <p class="text-sm">
+              <span>12:46:01 pm</span> / <span>00:00:00:224</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">/client/auth/changepassword:To Validate the password for acceptance of invalid inputs.</h5>
+<span class='badge badge-success'>10.10.2024 12:46:01 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:46:01 pm</span>
+<span class='badge badge-default'>00:00:00:224</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/changepassword</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          RowNum is :Row 22and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Testcase >: To Validate the password for acceptance of invalid inputs.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          EndPoint:/client/auth/changepassword
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Payload :{
+    "password": "234",
+    "confirmPassword": "Rhibhus@1234"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          ActualStatusCode is :400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          ActualResponseBody is :{"status":400,"message":"Invalid Password"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Assertion failed: Expected status code is  Incorrect expected [404] but found [400]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Row 22row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/changepassword:To Validate the password for acceptance of invalid inputs.</p>
+            <p class="text-sm">
+              <span>12:46:01 pm</span> / <span>00:00:00:259</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">/client/auth/changepassword:To Validate the password for acceptance of invalid inputs.</h5>
+<span class='badge badge-success'>10.10.2024 12:46:01 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:46:01 pm</span>
+<span class='badge badge-default'>00:00:00:259</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/changepassword</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          RowNum is :Row 23and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Testcase >: To Validate the password for acceptance of invalid inputs.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          EndPoint:/client/auth/changepassword
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Payload :{
+    "password": "Rhibhus@1234",
+    "confirmPassword": "34"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          ActualStatusCode is :400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          ActualResponseBody is :{"status":400,"message":"Invalid Password"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Assertion failed: Expected status code is  Incorrect expected [404] but found [400]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Row 23row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/twofactorauthentication:To Validate the otp for acceptance of invalid inputs.</p>
+            <p class="text-sm">
+              <span>12:46:01 pm</span> / <span>00:00:00:164</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">/client/auth/twofactorauthentication:To Validate the otp for acceptance of invalid inputs.</h5>
+<span class='badge badge-success'>10.10.2024 12:46:01 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:46:01 pm</span>
+<span class='badge badge-default'>00:00:00:164</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/twofactorauthentication</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          RowNum is :Row 24and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Testcase >: To Validate the otp for acceptance of invalid inputs.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          EndPoint:/client/auth/twofactorauthentication
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Payload :{
+    "otp": 54#W%3
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          ActualStatusCode is :400
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          ActualResponseBody is :<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>TypeError: Cannot read properties of undefined (reading &#39;message&#39;)<br> &nbsp; &nbsp;at file:///var/task/src/clientHandler.js:39:41<br> &nbsp; &nbsp;at Layer.handle_error (/var/task/node_modules/express/lib/router/layer.js:71:5)<br> &nbsp; &nbsp;at trim_prefix (/var/task/node_modules/express/lib/router/index.js:326:13)<br> &nbsp; &nbsp;at /var/task/node_modules/express/lib/router/index.js:286:9<br> &nbsp; &nbsp;at Function.process_params (/var/task/node_modules/express/lib/router/index.js:346:12)<br> &nbsp; &nbsp;at next (/var/task/node_modules/express/lib/router/index.js:280:10)<br> &nbsp; &nbsp;at Layer.handle_error (/var/task/node_modules/express/lib/router/layer.js:67:12)<br> &nbsp; &nbsp;at trim_prefix (/var/task/node_modules/express/lib/router/index.js:326:13)<br> &nbsp; &nbsp;at /var/task/node_modules/express/lib/router/index.js:286:9<br> &nbsp; &nbsp;at Function.process_params (/var/task/node_modules/express/lib/router/index.js:346:12)</pre>
+</body>
+</html>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Assertion failed: Expected status code is  Incorrect expected [404] but found [400]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:01 pm</td>
+        <td>
+          Row 24row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">/client/auth/resendotp:To Validate the email for acceptance of invalid inputs.</p>
+            <p class="text-sm">
+              <span>12:46:01 pm</span> / <span>00:00:00:590</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">/client/auth/resendotp:To Validate the email for acceptance of invalid inputs.</h5>
+<span class='badge badge-success'>10.10.2024 12:46:01 pm</span>
+<span class='badge badge-danger'>10.10.2024 12:46:02 pm</span>
+<span class='badge badge-default'>00:00:00:590</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5">/client/auth/resendotp</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:02 pm</td>
+        <td>
+          RowNum is :Row 25and Method is:POST
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:02 pm</td>
+        <td>
+          Testcase >: To Validate the email for acceptance of invalid inputs.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:02 pm</td>
+        <td>
+          EndPoint:/client/auth/resendotp
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:02 pm</td>
+        <td>
+          Payload :{
+    "email": "priyanka.jayhibhcom"
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:02 pm</td>
+        <td>
+          ActualStatusCode is :200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:02 pm</td>
+        <td>
+          ActualResponseBody is :""
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:46:02 pm</td>
+        <td>
+          Assertion failed: Expected status code is  Incorrect expected [404] but found [200]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>12:46:02 pm</td>
+        <td>
+          Row 25row datas are executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Oct 10, 2024 12:45:49 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Oct 10, 2024 12:46:02 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>14</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>10</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='58%'>
+<b>14</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='41%'><b>10</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='7%'><b>14</b> events passed</small></div>
+<div>
+<small data-tooltip='5%'><b>10</b> events failed,
+<b data-tooltip='%'>168</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"/client/auth/clientSignin:Validate the api's by giving invalid method.":3.23,"client/fetchraffle:Validate the api's by giving invalid method.":0.298,"/client/auth/changepassword:Validate the api's by giving invalid method.":0.275,"/client/auth/twofactorauthentication:Validate the api's by giving invalid method.":0.218,"/client/auth/resendotp:Validate the api's by giving invalid method.":0.18,"/client/Overview/fetch:Validate the api's by giving invalid method.":0.197,"/client/auth/clientSignasfasfin:Validate the api's by giving invalid End point.":0.19,"client/fetsfsafchraffle:Validate the api's by giving invalid End point.":0.29,"/client/auth/casfasfhangepassword:Validate the api's by giving invalid End point.":0.193,"/client/auth/twofactorsfasfsafasfauthentication:Validate the api's by giving invalid End point.":0.174,"/client/auth/sfasfasfresendotp:Validate the api's by giving invalid End point.":0.279,"/client/Overview/fetsfasfch:Validate the api's by giving invalid End point.":0.23,"/client/auth/clientSignin:Validate the api's by giving invalid Playload.":0.205,"client/fetchraffle:Validate the api's by giving invalid Playload.":0.203,"/client/auth/changepassword:Validate the api's by giving invalid Playload.":0.313,"/client/auth/twofactorauthentication:Validate the api's by giving invalid Playload.":0.165,"/client/auth/resendotp:Validate the api's by giving invalid Playload.":0.9,"/client/Overview/fetch:Validate the api's by giving invalid Playload.":0.33,"/client/auth/clientSignin:To Validate the Email for acceptance of invalid inputs.":0.264,"/client/auth/clientSignin:To Validate the password for acceptance of invalid inputs.":0.18,"/client/auth/changepassword:To Validate the password for acceptance of invalid inputs.":0.224,"/client/auth/changepassword:To Validate the password for acceptance of invalid inputs.":0.259,"/client/auth/twofactorauthentication:To Validate the otp for acceptance of invalid inputs.":0.164,"/client/auth/resendotp:To Validate the email for acceptance of invalid inputs.":0.59
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 14,
+failParent: 10,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 14,
+failEvents: 10,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 168
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

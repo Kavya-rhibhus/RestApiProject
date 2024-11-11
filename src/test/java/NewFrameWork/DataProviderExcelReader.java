@@ -18,7 +18,7 @@ import org.testng.annotations.DataProvider;
 
 public class DataProviderExcelReader extends BaseNewClass {
   
-
+ 
 		@DataProvider(name = "Data")
   public static Object[][] readExcelData() throws IOException {
 	        List<Object[]> data = new ArrayList<>();
@@ -33,7 +33,7 @@ public class DataProviderExcelReader extends BaseNewClass {
 	             System.out.println("row number is :"+ rownumber);
 	            Object[] rowValues = new Object[row.getLastCellNum()];
 	            for (int j = 0; j < row.getLastCellNum(); j++) 
-	            
+	             
 	            {
 	                 Cell cell = row.getCell(j, Row.MissingCellPolicy.RETURN_BLANK_AS_NULL);
 	            
@@ -67,42 +67,6 @@ public class DataProviderExcelReader extends BaseNewClass {
 	        }
 	    }
 	    
-	    @DataProvider(name = "FunctSheet")
-	    public static Object[][] readExcelData1() throws IOException {
-	        List<Object[]> data = new ArrayList<>();
-	        File file = new File(F_NAME);
-	          FileInputStream inputStream = new FileInputStream(file);
-	        Workbook workbook = WorkbookFactory.create(inputStream);
-	        Sheet sheet = workbook.getSheet(S_name);
-	        int rowCount = sheet.getLastRowNum();
-	        for (int i = 1; i <= rowCount; i++) { // start from second row
-	             Row row = sheet.getRow(i);
-	             int  rownumber=  row.getRowNum();
-	             System.out.print("row"+ rownumber);
-	             Object[] rowValues = new Object[row.getLastCellNum()];
-	            for (int j = 0; j < row.getLastCellNum(); j++) 
-	            
-	            {
-	                Cell cell = row.getCell(j, Row.MissingCellPolicy.RETURN_BLANK_AS_NULL);
-	                
-	                if (cell != null) {
-	                    rowValues[j] = getCellValue(cell);
-	                } else {
-	                    rowValues[j] = null;
-	                }
-	            }
-	            
-	         data.add(rowValues);
-	        }
-	        
-	        
-	        
-	        return data.toArray(new Object[0][0]);
-
-
-    
-    
-}
-
+	    
 
 }

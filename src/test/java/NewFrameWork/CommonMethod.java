@@ -20,22 +20,24 @@ public class CommonMethod extends BaseNewClass {
 	public double ExpectedStatusCodeDouble;
 	public String ExpectedResponseBody;
 	
-
+ 
 	
-	public void Method(String Rownum ,String APIFunctionName, String endPoint, String Method, String payload,
-			double ExpectedStatusCodeDouble,String ExpectedResponseBody) {
+	public void Method(String Rownum ,String APIFunctionName, String endPoint , String  Method, String payload,
+			double ExpectedStatusCodeDouble,String ExpectedResponseBody ,String jwt,String baseUrl) {
 		
 		test = BaseNewClass.extent.createTest( endPoint+":"+APIFunctionName,  endPoint);
 		
-		 
-		  if(Method.equals("POST")) {
+		
+		
+
+		  if(Method.equalsIgnoreCase("POST") ) {
 		    response = RestAssured
 
 				.given() 
-				
-				.header("Authorization", adminJWT )
-
-				.baseUri(adminBaseUrl)
+				.header("Authorization", jwt )
+				//.header("origin", jwt )
+	
+				.baseUri(baseUrl)
 			
 				.contentType(ContentType.JSON).body(payload)
 				
@@ -50,19 +52,21 @@ public class CommonMethod extends BaseNewClass {
 				.response();
 		  
 		     
-		
-		
+		 
+		 
 	}
 	
-	else if(Method.equals("GET")) {
+		
+		
+	else if(Method.equalsIgnoreCase("GET")) {
 		
 		 response = RestAssured
 
 				.given() 
 				
-				.header("Authorization", adminJWT )
-
-				.baseUri(adminBaseUrl)
+				.header("Authorization",jwt )
+ 
+				.baseUri(baseUrl)
 			
 				.contentType(ContentType.JSON)
 				.when()
@@ -80,14 +84,14 @@ public class CommonMethod extends BaseNewClass {
 	
 	}
 	
-else if(Method.equals("DELETE")) {
+else if(Method.equalsIgnoreCase("DELETE")) {
 		
 		response = RestAssured
 	             .given() 
 				
-				.header("Authorization", adminJWT )
+				.header("Authorization", jwt )
 
-				.baseUri(adminBaseUrl)
+				.baseUri(baseUrl)
 			
 				.contentType(ContentType.JSON).body(payload)
 
@@ -100,17 +104,19 @@ else if(Method.equals("DELETE")) {
 				.extract().response();
 		
 			 
-	
+	 
 	}
 	
-	else if  (Method.equals("PUT")){
+
+		  
+	else if  (Method.equalsIgnoreCase("PUT") ){
 		
 	response = RestAssured
 	             .given() 
 				
-				.header("Authorization", adminJWT )
-
-				.baseUri(adminBaseUrl)
+			   .header("Authorization", jwt )
+	         	//.header("Origin", jwt )
+				.baseUri(baseUrl)
 			
 				.contentType(ContentType.JSON).body(payload)
 
@@ -126,12 +132,12 @@ else if(Method.equals("DELETE")) {
 			 
 	
 	}
-
+		  
 		  
 	else {
 		System.out.print("There is no matched method or API to execute");
 	}
-		   
+	
 		
 	System.out.print("double ExpectedStatusCodeDouble"+ExpectedStatusCodeDouble);
 	
@@ -143,14 +149,18 @@ else if(Method.equals("DELETE")) {
 	 System.out.println(" status code is " + ActualStatusCode);
 	 BaseNewClass.test.log(Status.INFO, "ActualStatusCode is :" + ActualStatusCode);
 	 String ActualResponseBody = response.getBody().asString();
+	// if(ActualResponseBody.length()<=50) {
 	 BaseNewClass.test.log(Status.INFO, "ActualResponseBody is :" + ActualResponseBody);
+	// }
+	
+	 
 	 int ExpectedStatusCode = (int) ExpectedStatusCodeDouble;
 	 System.out.print(ExpectedStatusCode);
 	try {
 		Assert.assertEquals(ActualStatusCode, ExpectedStatusCode, "Expected status code is  Incorrect");
 		 BaseNewClass.test.log(Status.PASS, "Assertion passed");
 
-	} catch (AssertionError e) {
+	} catch (AssertionError e) { 
 
 		 BaseNewClass.test.log(Status.FAIL, "Assertion failed: " + e.getMessage());
 		System.err.println("Test failed: Assertion failed");
@@ -158,8 +168,10 @@ else if(Method.equals("DELETE")) {
 
 	 BaseNewClass.test.log(Status.INFO, Rownum+ "row datas are executed successfully");
 
-	}
 
+	}
+	
+	
 }
 
 
