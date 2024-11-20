@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NewFrameWork.RedevRaffolux">
+      <class name="NewFrameWork.MwcClientPortalTestClass2">
         <methods>
-          <include name="RestApiFuntValidations"/>
           <include name="setUp"/>
           <include name="afterMethod"/>
           <include name="tearDown"/>
+          <include name="MWCRestApiFuntValidations"/>
         </methods>
-      </class> <!-- NewFrameWork.RedevRaffolux -->
+      </class> <!-- NewFrameWork.MwcClientPortalTestClass2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

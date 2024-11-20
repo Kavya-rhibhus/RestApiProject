@@ -24,34 +24,34 @@ public class BaseNewClass {
 	
     
     //  MWC -client portal
-    public String mwcClientJWT = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0Ijp7InVzZXJfaWQiOiJVc2VyI2IyYmQ3YTA4LWE2ZTctNGVjMC1hODcwLTkyNzIyNTY3ZjlkYiIsInVzZXJfZW1haWwiOiJ0ZXN0MTIzNEBnbWFpbC5jb20iLCJ1c2VyX2ZpcnN0X25hbWUiOiJzYWQiLCJ1c2VyX2xhc3RfbmFtZSI6ImFzYXNkIiwiaXNTb2NpYWxNZWRpYSI6ZmFsc2V9LCJpYXQiOjE3MjAxNTkyNDl9.OTvthpZvQKYV5PpgE2uREuiHff18CLr5qgz_WQcXCCU";
+    public String mwcClientJWT = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0Ijp7InVzZXJfaWQiOiJVc2VyIzE2NTFjMTFjLTNkNTItNGZkZi1hMzk5LTlkNzgyZWY4ZjNhMSIsInVzZXJfZW1haWwiOiJ0ZXN0MTJAZ21haWwuY29tIiwidXNlcl9maXJzdF9uYW1lIjoidGVzIiwidXNlcl9sYXN0X25hbWUiOiJ0ZXN0IiwiaXNTb2NpYWxNZWRpYSI6ZmFsc2V9LCJpYXQiOjE3MzEzMDgxMzV9.zyNKrkmfLQfL997AoHqTTi1jK4K8C34eyOdXHNpEevM";
     public String mwcClientBaseUrl = "https://5x8cmx277h.execute-api.ap-south-2.amazonaws.com/testing";
 //	public static String F_NAME = "C:\\Users\\Rhibhus\\git\\newapitestingautomation-89\\ExcelData\\Monaco_Client_Api's_online.xlsx";
 //    public static String S_name="Negative";
 //    public String ReportName = "MWC-Client-Negative-Testcases-";
 //	public String ReportLoc = "C:\\Users\\Rhibhus\\git\\newapitestingautomation-89\\Reports\\MWC-ClientPortal-Report\\";
 	
-    
+     
     //	Raffle Tech project admin portal
 	
-	 public String rtAdminJWT = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0Ijp7InVzZXJfaWQiOiJVc2VyI3ByMjU1NGk2LXkxYTEtNDFuay1hNzIzLTJqNjc1ODMyNDAxMCIsInVzZXJfZW1haWwiOiJwcml5YW5rYS5qYXlha3VtYXJhbkByaGliaHVzLmNvbSIsInVzZXJfZmlyc3RfbmFtZSI6InByaXlhbmthIiwidXNlcl9sYXN0X25hbWUiOiJqIiwiaXNTb2NpYWxNZWRpYSI6dHJ1ZX0sImlhdCI6MTcyODg4MDczOCwiZXhwIjoxNzI4OTIzOTM4fQ.XVa_EL6tUP5w7BmNcQIc5Le9g8LjExSKD6tZuGBETC4";
+	 public String rtAdminJWT = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0Ijp7InVzZXJfaWQiOiJVc2VyI3ByMjU1NGk2LXkxYTEtNDFuay1hNzIzLTJqNjc1ODMyNDAxMCIsInVzZXJfZW1haWwiOiJwcml5YW5rYS5qYXlha3VtYXJhbkByaGliaHVzLmNvbSIsInVzZXJfZmlyc3RfbmFtZSI6InByaXlhbmthIiwidXNlcl9sYXN0X25hbWUiOiJqIiwiaXNTb2NpYWxNZWRpYSI6dHJ1ZX0sImlhdCI6MTczMTMxMTM4OSwiZXhwIjoxNzMxMzU0NTg5fQ.hTvwpYTfC2X4yBzZwdh4NaVW5pxslVdn3RrEIkflhbY";
      public String rtadminBaseUrl = "https://kd9j8uwoek.execute-api.ap-south-2.amazonaws.com/testing";
-  /*  public String ReportName = "RaffleTech-Admin-Negative-Testcases-";
-  	 public String ReportLoc = "C:\\Users\\Rhibhus\\git\\newapitestingautomation-89\\Reports\\Raffle-Tech-AdminPortal-Report\\";
-     public static String F_NAME ="C:\\Users\\Rhibhus\\git\\newapitestingautomation-89\\ExcelData\\Raise_Hero APIs.xlsx";
-	 public static String S_name="Negative-Admin";*/
-////	x
+  //   public String ReportName = "RaffleTech-Admin-Negative-Testcases-";
+  //	 public String ReportLoc = "C:\\Users\\Rhibhus\\git\\newapitestingautomation-89\\Reports\\Raffle-Tech-AdminPortal-Report\\";
+   //  public static String F_NAME ="C:\\Users\\Rhibhus\\git\\newapitestingautomation-89\\ExcelData\\Raise_Hero APIs.xlsx";
+	// public static String S_name="Negative-Admin";
+////	
 //	   
       
      
      //raffle tech client portal
      
-	 public String rtClientJWT = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0Ijp7InVzZXJfaWQiOiJVc2VyIzQ3NTdhYWZiLTQ2NjMtNDk5Zi05MTIwLTQ2MTYwZDE0OWI1MyIsInVzZXJfZW1haWwiOiJrYXZ5YWNsaWVudEBnbWFpbC5jb20iLCJ1c2VyX2ZpcnN0X25hbWUiOiJrYXZ5YWNsaWVudHdld2UiLCJ1c2VyX2xhc3RfbmFtZSI6IkNsaWVudHd3ZXdldyIsImlzU29jaWFsTWVkaWEiOnRydWV9LCJpYXQiOjE3Mjg4ODExMzgsImV4cCI6MTcyODg4NDczOH0.J7_NLY3iyNyPfpY2X2IBe1foMJmS9sj0thnJjGXe6Js";
+	 public String rtClientJWT = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXF1ZXN0Ijp7InVzZXJfaWQiOiJVc2VyIzBjY2I0N2JjLTFhYTctNGExZS04ODdiLWFlZGExZGQ5YzM2OCIsInVzZXJfZW1haWwiOiJqb25jbGllbnRAZ21haWwuY29tIiwidXNlcl9maXJzdF9uYW1lIjoiam9uIiwidXNlcl9sYXN0X25hbWUiOiJqb24iLCJpc1NvY2lhbE1lZGlhIjp0cnVlfSwiaWF0IjoxNzMxMzIwNjU3LCJleHAiOjE3MzEzMjQyNTd9.UDZhqNBsEUjheH30bjQgrcgBwPrWbCJCGhrbRzgcj6A";
      public String rtClientBaseUrl = "https://kd9j8uwoek.execute-api.ap-south-2.amazonaws.com/testing";
-    /* public String ReportName = "RaiseHero-Client-Negative-Testcases-";
-  	 public String ReportLoc = "C:\\Users\\Rhibhus\\git\\newapitestingautomation-89\\Reports\\Raffle-Tech-Client-Report\\";
-     public static String F_NAME ="C:\\Users\\Rhibhus\\git\\newapitestingautomation-89\\ExcelData\\Raise_Hero APIs.xlsx";
-     public static String S_name="RT_client_negative";*/
+   //  public String ReportName = "RaiseHero-Client-Negative-Testcases-";
+  	// public String ReportLoc = "C:\\Users\\Rhibhus\\git\\newapitestingautomation-89\\Reports\\Raffle-Tech-Client-Report\\";
+   //  public static String F_NAME ="C:\\Users\\Rhibhus\\git\\newapitestingautomation-89\\ExcelData\\Raise_Hero APIs.xlsx";
+   //  public static String S_name="RT_client_negative";
      
      
      
@@ -74,13 +74,15 @@ public class BaseNewClass {
      
      
      
-	//Raffle tech Project user portal  
+	//Raffle tech Project user portal
+ 	
+ 	//In common method >>>>uncommand the medhod and URL(domain)
 	 
-	 public String domainname = "https://testing.d2sqce4gy9zdlb.amplifyapp.com";
+	 public String domainname = "https://rt3.thegreatchristmasraffle.com/";
      public String rtuserBaseUrl = "https://kd9j8uwoek.execute-api.ap-south-2.amazonaws.com/testing";
-    public String ReportName = "RaffleTech-user-Negative-Testcases-";
+     public String ReportName = "RaffleTech-user-Negative-Testcases-";
 	 public String ReportLoc = "C:\\Users\\Rhibhus\\git\\newapitestingautomation-89\\Reports\\Raffle-Tech-userportal-Report\\";
-    public static String F_NAME = ExcelFolder+ "Raise_Hero APIs.xlsx";
+     public static String F_NAME = ExcelFolder+ "Raise_Hero APIs.xlsx";
 	 public static String S_name="Negative-UserRT";
 //	  
 	 

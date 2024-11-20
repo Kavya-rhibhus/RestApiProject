@@ -25,6 +25,8 @@ public class CommonMethod extends BaseNewClass {
 	public void Method(String Rownum ,String APIFunctionName, String endPoint , String  Method, String payload,
 			double ExpectedStatusCodeDouble,String ExpectedResponseBody ,String jwt,String baseUrl) {
 		
+	//public void Method(String Rownum ,String APIFunctionName, String endPoint , String  Method, String payload,
+				//double ExpectedStatusCodeDouble,String ExpectedResponseBody ,String jwt,String baseUrl) {
 		test = BaseNewClass.extent.createTest( endPoint+":"+APIFunctionName,  endPoint);
 		
 		

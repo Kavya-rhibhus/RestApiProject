@@ -12,11 +12,11 @@ public class UserPortalRaffleTech extends BaseNewClass {
 		CommonMethod methods = new CommonMethod();
          methods.Method(Rownum, APIFunctionName, endPoint, Method, payload, ExpectedStatusCodeDouble,
 				ExpectedResponseBody,domainname,rtuserBaseUrl);
- 
+  
 	}
 
 }
- 
+  
 
  
 	
